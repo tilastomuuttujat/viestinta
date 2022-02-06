@@ -1,0 +1,345 @@
+@charset "utf-8";
+/* CSS Document */
+
+#home .container-fluid {
+	margin-top: 150px;
+}
+.navbar-dark, footer {
+    background-color: #1c2048;
+}
+h1.navbar-brand {
+    font-size: 25pt !important;
+	float: none;
+    padding: 0;
+    line-height: initial;
+    height: auto;
+	margin-top: 10px;
+	text-align: center;
+	color: #ee6969 !important;
+}
+#versions {
+	padding: 15px;
+}
+#versions .selectVersion .btn,
+#versions .selectVersion .btn:focus,
+#versions .selectVersion .btn:active,
+#versions .selectVersion .btn:focus:active {
+	color: #fff;
+	border-color: #fff;
+	outline: none !important;
+	box-shadow: none !important;
+}
+#versions .selectVersion:hover .dropdown-toggle {
+    border-color: #ccc !important;
+    color: #ccc !important;
+}
+.hamburger-inner, 
+.hamburger-inner:after, 
+.hamburger-inner:before {
+	background-color: #e8e8e8 !important;
+}
+.nav li a,
+.nav li span {
+	color: #e8e8e8 !important;
+}
+.nav li a.nav-link {
+    padding: 10px;
+	margin: 4px;
+	border-radius: 5px;
+}
+.nav li.active-parent a.dropdown-toggle,
+.nav li.active a {
+	color: #000 !important;
+    background-color: #bbbdd3 !important;
+}
+.nav li a:hover,
+.nav li span:hover {
+	color: #000 !important;
+	background-color: #ccc;
+}
+#navbar .dropdown-menu {
+    margin: 0;
+    background-color: #1c2048;
+    border: none;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+	box-shadow: 0 15px 20px 0px rgba(0, 0, 0, 0.49);
+}
+#navbar .dropdown-item:hover {
+	background-color: #ccc;
+}
+#navbar .dropdown-divider {
+    border-color: #ee6969;
+}
+#navbar .dropdown-toggle::after {
+	display: none;
+}
+#navbar .dropdown-item.active {
+    padding-bottom: 7px;
+    padding-top: 5px;
+}
+h2, h3 {
+    text-align: center;
+}
+h3 {
+	font-size: 1.6rem;
+	margin-bottom: 10px;
+}
+p,
+li {
+	line-height: 1.5;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+.card#changelog .list-group {
+    border: 1px solid #00000020;
+}
+.card + .card {
+    margin-top: 3rem;
+}
+.list-group-item:hover {
+	z-index: 0;
+}
+ul>li>ul>li:first-child {
+    border-top: 1px solid #00000020 !important;
+}
+.deprecated,
+span.deprecated .hljs-comment {
+	color: red !important;
+}
+.addition .hljs-comment {
+	color: #6cee62 !important;
+}
+.code {
+	padding: initial;
+	background: none;
+    border: none;
+	word-break: break-word;
+  	overflow: initial;
+}
+.inline {
+	display: inline-block !important;
+	overflow: unset !important;
+	padding: 2px 4px !important;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+.code .hljs {
+	padding: 1.5em;
+}
+span.indent {
+	display: block;
+	white-space: pre-line;
+    padding-left: 40px;
+}
+.code .xml,
+.code .javascript,
+.code .indent_whiteSpaceNormal .indent,
+#methods-section .code {
+	white-space: normal;
+}
+.whiteSpace-preLine {
+	white-space: pre-line !important;
+}
+.hljs-comment {
+	color: #ccc !important;
+}
+.hljs-number {
+    color: #ec7575 !important
+}
+hr {
+    overflow: visible;
+	width: 90%;
+    height: 30px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+.horizontal-timeline .events-content h2 {
+	font-weight: 400;
+	font-size: 25pt;
+}
+.horizontal-timeline .events-content p {
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: left;
+}
+.twitter-tweet {
+	margin: auto;
+}
+#methodsForm .row,
+#methodsForm input,
+#methodsForm select,
+#methodsForm button {
+	width: 100% !important;
+	margin: 0;
+}
+/*#methodsForm .row:first-child .col:last-child {
+	padding-right: 1px;
+}*/
+#methodsForm input,
+#methodsForm input::placeholder {
+	color: #007bff !important;
+}
+#methodsForm #DOMeventsResults {
+    height: 100px;
+    overflow: auto;
+}
+#methodsForm #DOMeventsResults p span:nth-child(1) {
+	color: #000;
+	border-right: solid #000 1px;
+    padding-right: 5px;
+}
+#methodsForm #DOMeventsResults p span:nth-child(2) {
+    color: #2496cf;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: solid #000 1px;
+}
+#methodsForm #DOMeventsResults p span:nth-child(3) {
+	color: #2ecf24;
+	padding-left: 5px;
+}
+#deprecated .table td[rowspan] {
+    vertical-align: middle;
+}
+/* Selects all td with a rowspan containing a 1, meaning in the 10's */
+#deprecated .table td[rowspan*="1"] {
+    vertical-align: initial;
+}
+#deprecated .table tr:nth-of-type(even) td:not([rowspan]) {
+    background-color: #f7f7f7;
+}
+#deprecated .table tr td[rowspan] {
+    border-bottom: none;
+}
+
+/* CSS for tables in Bootstrap 4 Cards from github@philipnewcomer
+ https://github.com/philipnewcomer/bootstrap4-card-tables */
+.card > .table-responsive-md > .table {
+	border-right: 0;
+	border-left: 0;
+	margin-bottom: 0;
+}
+
+.card > .table-responsive-md > .table:last-child {
+	border-bottom: 0;
+}
+
+.card > .table-responsive-md > .table:not(.table-sm) th,
+.card > .table-responsive-md > .table:not(.table-sm) td {
+	padding: 0.75rem 1.25rem;
+}
+
+.card > .table-responsive-md > .table td:first-child,
+.card > .table-responsive-md > .table th:first-child {
+	border-left: 0;
+}
+
+.card > .table-responsive-md > .table td:last-child,
+.card > .table-responsive-md > .table th:last-child {
+	border-right: 0;
+}
+
+.card > .table-responsive-md > .table tr:first-child td,
+.card > .table-responsive-md > .table tr:first-child th {
+	border-top: 0;
+}
+.card > .table-responsive-md > .table tr:last-child td {
+	border-bottom: 0;
+}
+.card .card-header + .table-responsive-md > .table {
+	border-top: 0;
+}
+/* End CSS from github@philipnewcomer */
+
+footer .text {
+    color: #e8e8e8;
+}
+footer iframe#twitter-widget-0 {
+    display: block !important;
+    margin: auto;
+}
+@media only screen and (max-width: 400px) {
+	#navbar .dropdown-item {
+		white-space: normal;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.text, .code {
+		width: initial;
+	}
+	h1.navbar-brand {
+		font-size: 18pt !important;
+	}
+}
+@media only screen and (max-width: 767.9px) {
+	#home .container-fluid {
+		margin-top: 150px !important;
+	}
+	.navbar-collapse {
+		overflow-y: auto;
+		max-height: 400px;
+	}
+	.navbar-nav > div {
+		width: 100%;
+		text-align: center;
+	}
+	#navbar {
+		padding-bottom: 1rem;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.nav li a.nav-link {
+		margin: 0 !important;
+		border-radius: 0 !important;
+	}
+	.dropdown-toggle .fa {
+		position: absolute;
+		margin-left: 5px;
+		line-height: inherit;
+	}
+	.dropdown-menu {
+		border-radius: 0!important;
+	}
+}
+@media only screen and (max-width: 992px) {
+	h1.navbar-brand {
+		padding-left: 15px;
+	}
+
+}
+@media only screen and (max-width: 1100px) {
+	section > .container-fluid {
+		width: 90% !important;
+	}
+	#home .container-fluid {
+		margin-top: 200px;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.navbar .container {
+		width: 1350px;
+	}
+}
+@media only screen and (min-width: 767.9px) {
+	#navbar .dropdown-menu {
+		position: absolute !important;
+	}
+}
