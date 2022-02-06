@@ -23,7 +23,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-
+    <link href="css/johnstyle.css" rel="stylesheet">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -33,6 +33,39 @@
 
 	</head>
 	<body>
+
+        <header id="home">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="menu-wrap">
+				<nav class="menu">
+					<div class="icon-list">
+						<a href="index.html#home"><span>Pääsivu</span></a>
+						<a href="work.html#work"><span>Työ</span></a>
+						<a href="blog.html#blog"><span>Blogi</span></a>
+						<a href="about.html#about"><span>Lisätietoja</span></a>
+						<a href="contact.html#contact"><span>Yhteystiedot</span></a>
+					</div>
+				</nav>
+			    </div>
+			    <button class="menu-button" id="open-button"></button>
+              </div>
+            </div>
+          <section class="hero" id="hero">
+            <div class="container">
+			  <!-- Slider Button (don't edit!)-->
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
+
+
+
+
 
 	<nav id="fh5co-main-nav" role="navigation">
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active"><i></i></a>
@@ -199,17 +232,6 @@
 
 						</div>
 					</div>
-					<div class="row copy-right">
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<p class="fh5co-social-icon">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-facebook2"></i></a>
-								<a href="#"><i class="icon-instagram"></i></a>
-								<a href="#"><i class="icon-dribbble2"></i></a>
-								<a href="#"><i class="icon-youtube"></i></a>
-							</p>
-						</div>
-					</div>
 				</div>
 			</div>
 		</footer>
@@ -230,6 +252,9 @@
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+
+	<script src="js/classie.js"></script>
+	<script src="js/johnmain.js"></script>
 
 	</body>
 </html>
