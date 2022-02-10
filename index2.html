@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Viestinnän historia</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Maven+Pro'><link rel="stylesheet" href="./xstyle.css">
+<style>
+[property=mainContentOfPage] {
+  -webkit-font-smoothing: antialiased;
+}
+
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ *  BEGIN - THEME SECTION
+ **/
+.parallax-container {
+  width: 1170px;
+  overflow: hidden;
+  position: absolute;
+  height: 728px;
+}
+.parallax-container .ghost-in-the-background {
+  font-size: 22.5em;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 0.8;
+  opacity: 0.055;
+  position: absolute;
+  width: 1170px;
+  margin-top: 35px;
+}
+
+.theme-info {
+  height: 710px;
+}
+.theme-info h2 {
+  font-family: "Maven Pro", sans-serif;
+  color: #9a9a9a;
+  margin-bottom: 2.1rem;
+  font-weight: normal;
+  line-height: 0.97;
+  margin-top: 0.6rem;
+  padding-top: 0.4em;
+  white-space: normal;
+  font-size: 6.7em;
+  letter-spacing: -5px;
+  word-spacing: 10px;
+}
+.theme-info h2 .regular {
+  font-size: 0.5em;
+}
+.theme-info h2 .big {
+  color: #888888;
+}
+.theme-info .aboutTheme {
+  text-align: center;
+}
+.theme-info .aboutTheme > p {
+  font-size: 1.125em;
+  font-weight: 300;
+  color: #212121;
+  line-height: 1.87;
+  letter-spacing: -0.1px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+span.topic {
+  letter-spacing: 0.08em;
+  display: block;
+  font-weight: 600;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+a.learnMore {
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  font-weight: 700;
+  background-color: #F9F9F9;
+  border: 2px solid #828282;
+  /*default*/
+  padding: 15px 60px;
+  margin: 70px 20px 0 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: color 0.6s ease-in;
+}
+a.learnMore span {
+  position: relative;
+  z-index: 1;
+}
+a.learnMore:visited {
+  color: #8c8c8c;
+}
+a.learnMore:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #828282;
+  /*default*/
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  -ms-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+a.learnMore:hover {
+  color: white;
+}
+a.learnMore:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  -ms-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.theme-photo {
+  padding-top: 15px;
+}
+.theme-photo .photo-img {
+  width: 505px;
+  height: 713px;
+  background-position: 50% 50%;
+}
+.theme-photo .frame {
+  height: 100%;
+  width: 505px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.theme-photo .frame .frame-side {
+  position: absolute;
+}
+.theme-photo .frame .frame-side-top {
+  top: 33px;
+  left: 18px;
+  right: 18px;
+  height: 2px;
+}
+.theme-photo .frame .frame-side-right {
+  top: 33px;
+  bottom: 18px;
+  right: 18px;
+  width: 2px;
+}
+.theme-photo .frame .frame-side-bottom {
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+  height: 2px;
+}
+.theme-photo .frame .frame-side-left {
+  bottom: 18px;
+  top: 33px;
+  left: 18px;
+  width: 2px;
+}
+
+#theme1:focus {
+  outline-color: #f89169;
+}
+#theme1 .ghost-in-the-background {
+  left: 30px;
+}
+#theme1 .theme-info {
+  border-bottom: 2px solid #f89169;
+}
+#theme1 .theme-info .topic {
+  border-bottom: 2px solid #f89169;
+}
+#theme1 a.learnMore {
+  border: 2px solid #f89169;
+  /* color: $theme2_colour;*/
+}
+#theme1 a.learnMore:after {
+  background: #f89169;
+}
+#theme1 .theme-photo .photo-img {
+  background-image: url();
+  float: right;
+}
+#theme1 .theme-photo .frame {
+  right: 15px;
+}
+#theme1 .theme-photo .frame .frame-side-top {
+  background: #f89169;
+}
+#theme1 .theme-photo .frame .frame-side-right {
+  background: #f89169;
+}
+#theme1 .theme-photo .frame .frame-side-bottom {
+  background: #f89169;
+}
+#theme1 .theme-photo .frame .frame-side-left {
+  background: #f89169;
+}
+
+#theme2:focus {
+  outline-color: #24c8c7;
+}
+#theme2 .ghost-in-the-background {
+  right: 400px;
+}
+#theme2 .theme-info {
+  border-bottom: 2px solid #24c8c7;
+}
+#theme2 .theme-info .topic {
+  border-bottom: 2px solid #24c8c7;
+}
+#theme2 a.learnMore {
+  border: 2px solid #24c8c7;
+  /* color: $theme2_colour;*/
+}
+#theme2 a.learnMore:after {
+  background: #24c8c7;
+}
+#theme2 .theme-photo .photo-img {
+  background-image: url(//placehold.it/505x728);
+  float: left;
+}
+#theme2 .theme-photo .frame .frame-side-top {
+  background: #24c8c7;
+}
+#theme2 .theme-photo .frame .frame-side-right {
+  background: #24c8c7;
+}
+#theme2 .theme-photo .frame .frame-side-bottom {
+  background: #24c8c7;
+}
+#theme2 .theme-photo .frame .frame-side-left {
+  background: #24c8c7;
+}
+
+#theme3:focus {
+  outline-color: #f4bf57;
+}
+#theme3 .ghost-in-the-background {
+  left: 600px;
+}
+#theme3 .theme-info {
+  border-bottom: 2px solid #f4bf57;
+}
+#theme3 .theme-info .topic {
+  border-bottom: 2px solid #f4bf57;
+}
+#theme3 a.learnMore {
+  border: 2px solid #f4bf57;
+  /* color: $theme2_colour;*/
+}
+#theme3 a.learnMore:after {
+  background: #f4bf57;
+}
+#theme3 .theme-photo .photo-img {
+  background-image: url(//placehold.it/505x728);
+  float: right;
+}
+#theme3 .theme-photo .frame {
+  right: 15px;
+}
+#theme3 .theme-photo .frame .frame-side-top {
+  background: #f4bf57;
+}
+#theme3 .theme-photo .frame .frame-side-right {
+  background: #f4bf57;
+}
+#theme3 .theme-photo .frame .frame-side-bottom {
+  background: #f4bf57;
+}
+#theme3 .theme-photo .frame .frame-side-left {
+  background: #f4bf57;
+}
+
+#theme4:focus {
+  outline-color: #758638;
+}
+#theme4 .ghost-in-the-background {
+  right: 750px;
+}
+#theme4 .theme-info {
+  border-bottom: 2px solid #758638;
+}
+#theme4 .theme-info .topic {
+  border-bottom: 2px solid #758638;
+}
+#theme4 a.learnMore {
+  border: 2px solid #758638;
+  /* color: $theme2_colour;*/
+}
+#theme4 a.learnMore:after {
+  background: #758638;
+}
+#theme4 .theme-photo .photo-img {
+  background-image: url(//placehold.it/505x728);
+  float: left;
+}
+#theme4 .theme-photo .frame .frame-side-top {
+  background: #758638;
+}
+#theme4 .theme-photo .frame .frame-side-right {
+  background: #758638;
+}
+#theme4 .theme-photo .frame .frame-side-bottom {
+  background: #758638;
+}
+#theme4 .theme-photo .frame .frame-side-left {
+  background: #758638;
+}
+
+#theme5:focus {
+  outline-color: #758638;
+}
+#theme5 .ghost-in-the-background {
+  left: 400px;
+}
+#theme5 .theme-info {
+  border-bottom: 2px solid #758638;
+}
+#theme5 .theme-info .topic {
+  border-bottom: 2px solid #758638;
+}
+#theme5 a.learnMore {
+  border: 2px solid #758638;
+  /* color: $theme2_colour;*/
+}
+#theme5 a.learnMore:after {
+  background: #758638;
+}
+#theme5 .theme-photo .photo-img {
+  background-image: url(//placehold.it/505x728);
+  float: right;
+}
+#theme5 .theme-photo .frame .frame-side-top {
+  background: #758638;
+}
+#theme5 .theme-photo .frame .frame-side-right {
+  background: #758638;
+}
+#theme5 .theme-photo .frame .frame-side-bottom {
+  background: #758638;
+}
+#theme5 .theme-photo .frame .frame-side-left {
+  background: #758638;
+}
+/**
+ *  CLOSE - THEME SECTION
+ **/
+#title {
+  margin-top: 110px;
+  position: relative;
+  right: 5px;
+  display: inline-block;
+}
+#title h1 {
+  font-size: 6.7em;
+  font-family: "Maven Pro", sans-serif;
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: -4px;
+  word-spacing: 20px;
+}
+#title h1 .curDate {
+  font-weight: 900;
+}
+#title h2 {
+  color: #707070;
+  margin: 0;
+  position: relative;
+  bottom: 85px;
+  left: 256px;
+}
+
+#intro h3 {
+  font-size: 3em;
+  margin-right: 20px;
+}
+#intro a.learnMore {
+  border: 2px solid #7b7b7b;
+  position: relative;
+  right: 20px;
+}
+#intro a.learnMore:after {
+  background: #7b7b7b;
+  -webkit-transform: translateX(-86%) translateY(-25%) rotate(45deg);
+  -ms-transform: translateX(-86%) translateY(-25%) rotate(45deg);
+  transform: translateX(-86%) translateY(-25%) rotate(45deg);
+}
+#intro a.learnMore:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  -ms-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+#intro .borderBottom {
+  border-bottom: 2px solid #7b7b7b;
+}
+
+.morphext > .animated {
+  display: inline-block;
+}
+
+.squareBlockLink {
+  background-color: #12939a;
+  width: 180px;
+  height: 180px;
+  padding: 10px;
+}
+.squareBlockLink a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  line-height: 20px;
+}
+.squareBlockLink a:visited, .squareBlockLink a:focus, .squareBlockLink a:hover {
+  color: white;
+}
+
+/**
+ * BEGIN - Scroll down animation
+ **/
+
+
+@-webkit-keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+@-webkit-keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+/**
+ * CLOSE - Scroll down animation
+ **/
+#themeIntro {
+  position: relative;
+  top: 55px;
+  left: 78px;
+}
+
+#overview h2 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 4.652em;
+  letter-spacing: -2.5px;
+  line-height: 94px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  margin-top: 0;
+}
+#overview .video {
+  cursor: pointer;
+  float: right;
+}
+
+#js-rotating {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 4.326em;
+  text-align: left;
+  letter-spacing: -3px;
+  line-height: 80px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.wordwrap {
+  white-space: pre-wrap;
+  /* CSS3 */
+  white-space: -moz-pre-wrap;
+  /* Firefox */
+  white-space: -pre-wrap;
+  /* Opera <7 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* IE */
+}
+
+.theme1color {
+  color: #f89169;
+}
+
+.theme2color {
+  color: #24c8c7;
+}
+
+.theme3color {
+  color: #f4bf57;
+}
+
+.theme4color {
+  color: #758638;
+}
+
+.theme5color {
+  color: #8E5A55;
+}
+
+.mrgn-tp-xxl {
+  margin-top: 75px;
+}
+
+.mrgn-bttm-xxl {
+  margin-bottom: 75px;
+}
+
+.mrgn-tp-xxxl {
+  margin-top: 105px;
+}
+
+.mrgn-bttm-xxxl {
+  margin-bottom: 105px;
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main role="main" property="mainContentOfPage" class="container">
+    <div id="intro" class="mrgn-bttm-lg">
+        <div class="row">
+            <div class="col-xs-9">
+                <div id="title">
+                    <h1>Viestinnän historia <span class="curDate">eaa</span></h1>
+                    <h2>Ennen ajanlaskun alkua</h2>
+                </div>
+                <div>
+                    <h3 class="inline">Teemat:</h3>
+                    <div id="js-rotating" class="wordwrap inline">
+                        <span class="theme1color">Puheen synty</span>,
+                        <span class="theme2color">Kielen synty</span>,
+	                    <span class="theme3color">Laskujärjestelmän synty</span>,
+                        <span class="theme4color">Kuvallinen ilmaisu</span>,
+                        <span class="theme5color">Kirjallinen ilmaisu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3"> 
+            </div>
+        </div>
+        <div class="row mrgn-tp-xxl mrgn-bttm-xl">
+            <div class="col-xs-12 borderBottom"></div>
+        </div>
+    </div>
+    <div class="row mrgn-tp-xxxl mrgn-bttm-xxxl" id="theme1">
+        <div class="parallax-container">
+            <div class="ghost-in-the-background parallax" data-rellax-speed="6">Puheen
+                <br>synty</div>
+        </div>
+        <div class="col-md-6 theme-info">
+            <span class="topic">01 Puheen synty</span>
+            <h2><span class="regular">Äänistä</span> <span class="big">äänteiksi</span></h2>
+            <div class="aboutTheme">
+                <p>Ensimmäinen kieli saattoi kehittyä, kun ensimmäiset merkitykselliset sanat johdettiin ihmisen jäljittelemällä luonnonääniä, kuten petojen ja lintujen huutojen jäljitelminä.</p>
+            </div>
+        </div>
+        <div class="col-md-6 theme-photo">
+            <div class="photo-img"></div>
+            <div class="frame">
+                <div class="frame-side frame-side-top "></div>
+                <div class="frame-side frame-side-right"></div>
+                <div class="frame-side frame-side-bottom"></div>
+                <div class="frame-side frame-side-left"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row mrgn-tp-xxxl mrgn-bttm-xxxl" id="theme2">
+        <div class="parallax-container">
+            <div class="ghost-in-the-background parallax" data-rellax-speed="-9">Kielen
+                <br>synty</div>
+        </div>
+        <div class="col-md-6 theme-photo">
+            <div class="photo-img"></div>
+            <div class="frame">
+                <div class="frame-side frame-side-top "></div>
+                <div class="frame-side frame-side-right"></div>
+                <div class="frame-side frame-side-bottom"></div>
+                <div class="frame-side frame-side-left"></div>
+            </div>
+        </div>
+        <div class="col-md-6 theme-info">
+            <span class="topic">02 Kielen synty</span>
+            <h2><span class="regular">Kielestä</span> <span class="big">selviytymis-</span><span class="big">keino</span></h2>
+            <div class="aboutTheme">
+                <p>Vaikka tiedämme, että kieli esiintyi ensimmäisen kerran Homo sapiensissa jossain 30 000 - 100 000 vuotta sitten, kielen kehittymisen salaisuus on edelleen tuntematon, ja valtavirran teoriat jakautuvat kahteen selvästi eri leiriin.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row mrgn-tp-xxxl mrgn-bttm-xxxl" id="theme3">
+        <div class="parallax-container">
+            <div class="ghost-in-the-background parallax" data-rellax-speed="5">Lasku
+                <br>järjestelmä</div>
+        </div>
+        <div class="col-md-6 theme-info">
+            <span class="topic">03 Laskujärjestelmän synty</span>
+            <h2><span class="regular">Sormista</span> <span class="big">kymmen-</span><span class="big">järjestelmä</span></h2>
+            <div class="aboutTheme">
+                <p>Pian kielen kehittymisen jälkeen on turvallista olettaa, että ihmiset alkavat laskea - ja että sormet ja peukalot muodostavat luonnon helmitaulun . Desimaalijärjestelmä ei ole sattumaa. Kymmenen on ollut useimpien historian laskentajärjestelmien perusta.</p>
+            </div>
+        </div>
+        <div class="col-md-6 theme-photo">
+            <div class="photo-img"></div>
+            <div class="frame">
+                <div class="frame-side frame-side-top "></div>
+                <div class="frame-side frame-side-right"></div>
+                <div class="frame-side frame-side-bottom"></div>
+                <div class="frame-side frame-side-left"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row mrgn-tp-xxxl mrgn-bttm-xxxl" id="theme4">
+        <div class="parallax-container">
+            <div class="ghost-in-the-background parallax" data-rellax-speed="-9">Kuvallinen
+                <br>ilmaisu</div>
+        </div>
+        <div class="col-md-6 theme-photo">
+            <div class="photo-img"></div>
+            <div class="frame">
+                <div class="frame-side frame-side-top "></div>
+                <div class="frame-side frame-side-right"></div>
+                <div class="frame-side frame-side-bottom"></div>
+                <div class="frame-side frame-side-left"></div>
+            </div>
+        </div>
+        <div class="col-md-6 theme-info">
+            <span class="topic">04 Kuvallinen ilmaisu</span>
+            <h2><span class="regular">Kuvat</span> <span class="big">ilmentämään asioita</span></h2>
+            <div class="aboutTheme">
+                <p>Ranskasta ja Espanjasta on löydetty lähes 350 luolaa, joissa on esihistoriallista taidetta. Kuuluisin on Chauvet'n luola, ja se on 32 000 vuotta vanha.</p>
+            </div>
+        </div>
+    </div>
+	<div class="row mrgn-tp-xxxl mrgn-bttm-xxxl" id="theme5">
+        <div class="parallax-container">
+            <div class="ghost-in-the-background parallax" data-rellax-speed="5">Kirjallinen
+                <br>ilmaisu</div>
+        </div>
+        <div class="col-md-6 theme-info">
+            <span class="topic">05 Kirjallinen ilmaisu</span>
+            <h2><span class="regular">Kirjoitukset</span> <span class="big">kertomaan tarinoita</span></h2>
+            <div class="aboutTheme">
+                <p>Kirjoitusjärjestelmiä edelsi protokirjoitus, ideografisten ja/tai varhaisten muistisymbolien järjestelmät.</p>
+            </div>
+        </div>
+        <div class="col-md-6 theme-photo">
+            <div class="photo-img"></div>
+            <div class="frame">
+                <div class="frame-side frame-side-top "></div>
+                <div class="frame-side frame-side-right"></div>
+                <div class="frame-side frame-side-bottom"></div>
+                <div class="frame-side frame-side-left"></div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://thaipo.ca/codepen/morphext.min.js'></script>
+<script src='https://thaipo.ca/codepen/rellax.js'></script><script  src="./zscript.js"></script>
+<script>
+// Activate a modified Rellax plugin for the horizontal parallax affect 
+var rellax = new Rellax('.parallax');
+
+// Activate Morphext plugin for marquee animation
+$("#js-rotating").Morphext({
+  animation: "fadeInRight",
+  speed: 3000,
+  complete: function() {
+    console.log("This is called after a phrase is animated in! Current phrase index: " + this.index);
+  }
+});
+</script>
+</body>
+</html>
