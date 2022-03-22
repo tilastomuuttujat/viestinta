@@ -3,403 +3,406 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1190.6 841.9" style="enable-background:new 0 0 1190.6 841.9;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#96CEB8;}
-	.st1{fill:#80B8A4;}
-	.st2{fill:#6D9B8D;}
-	.st3{fill:#F7BFBF;}
-	.st4{fill:#E88783;}
-	.st5{fill:#D85142;}
-	.st6{fill:#F9CB5B;}
-	.st7{fill:#F4D080;}
-	.st8{fill:#FAEBBE;}
-	.st9{fill:#939EA5;}
-	.st10{fill:#60717B;}
-	.st11{fill:#354655;}
-	.st12{fill:#F47D20;}
-	.st13{fill:#FAA757;}
-	.st14{fill:#FDC48D;}
-	.st15{fill:#A1999C;}
-	.st16{fill:#6A5E63;}
-	.st17{fill:#52454A;}
-	.st18{fill:#83D2E6;}
-	.st19{fill:#67BED3;}
-	.st20{fill:#579DAD;}
-	.st21{fill:#00B4A8;}
-	.st22{fill:#6CC3B9;}
-	.st23{fill:#A4D2C8;}
-	.st24{fill:#010101;}
-	.st25{font-family:'Eurostile-ExtendedTwo';}
-	.st26{font-size:6px;}
-	.st27{font-size:10px;}
-	.st28{font-size:5.9998px;}
-	.st29{font-size:9.9996px;}
-	.st30{font-size:6.0003px;}
-	.st31{font-size:10.0005px;}
-	.st32{font-size:8.0004px;}
-	.st33{font-size:8px;}
-	.st34{fill:#E8E4E2;}
-	.st35{fill:#DDDAD7;}
-	.st36{font-size:21px;}
-	.st37{font-size:12px;}
-	.st38{fill:none;stroke:#F4D080;stroke-miterlimit:10;}
-	.st39{fill:none;stroke:#6CC3B9;stroke-miterlimit:10;}
-	.st40{fill:none;stroke:#67BED3;stroke-miterlimit:10;}
-	.st41{fill:none;stroke:#60727B;stroke-miterlimit:10;}
-	.st42{fill:none;stroke:#6B5E63;stroke-miterlimit:10;}
-	.st43{fill:none;stroke:#E88683;stroke-miterlimit:10;}
-	.st44{fill:none;stroke:#FAA759;stroke-miterlimit:10;}
-	.st45{fill:none;stroke:#80B8A4;stroke-miterlimit:10;}
-	.st46{font-size:30px;}
-	.st47{opacity:0.4;fill:#FEE8AA;}
+	.st0{opacity:0.4;fill:#FEE8AA;}
+	.st1{fill:#96CEB8;}
+	.st2{fill:#80B8A4;}
+	.st3{fill:#6D9B8D;}
+	.st4{fill:#F7BFBF;}
+	.st5{fill:#E88783;}
+	.st6{fill:#D85142;}
+	.st7{fill:#F9CB5B;}
+	.st8{fill:#F4D080;}
+	.st9{fill:#FAEBBE;}
+	.st10{fill:#939EA5;}
+	.st11{fill:#60717B;}
+	.st12{fill:#354655;}
+	.st13{fill:#F47D20;}
+	.st14{fill:#FAA757;}
+	.st15{fill:#FDC48D;}
+	.st16{fill:#A1999C;}
+	.st17{fill:#6A5E63;}
+	.st18{fill:#52454A;}
+	.st19{fill:#83D2E6;}
+	.st20{fill:#67BED3;}
+	.st21{fill:#579DAD;}
+	.st22{fill:#00B4A8;}
+	.st23{fill:#6CC3B9;}
+	.st24{fill:#A4D2C8;}
+	.st25{fill:#010101;}
+	.st26{font-family:'Eurostile-ExtendedTwo';}
+	.st27{font-size:6px;}
+	.st28{font-size:10px;}
+	.st29{font-size:5.9998px;}
+	.st30{font-size:9.9996px;}
+	.st31{font-size:6.0003px;}
+	.st32{font-size:10.0005px;}
+	.st33{font-size:8.0004px;}
+	.st34{font-size:8px;}
+	.st35{fill:#E8E4E2;}
+	.st36{fill:#DDDAD7;}
+	.st37{font-size:30px;}
+	.st38{font-size:21px;}
+	.st39{fill:none;stroke:#F4D080;stroke-miterlimit:10;}
+	.st40{fill:none;stroke:#6CC3B9;stroke-miterlimit:10;}
+	.st41{fill:none;stroke:#67BED3;stroke-miterlimit:10;}
+	.st42{fill:none;stroke:#60727B;stroke-miterlimit:10;}
+	.st43{fill:none;stroke:#6B5E63;stroke-miterlimit:10;}
+	.st44{fill:none;stroke:#E88683;stroke-miterlimit:10;}
+	.st45{fill:none;stroke:#FAA759;stroke-miterlimit:10;}
+	.st46{fill:none;stroke:#80B8A4;stroke-miterlimit:10;}
+	.st47{font-size:50px;}
+	.st48{font-size:9px;}
 </style>
-<path class="st0" d="M516.6,441.4c21.6-1.3,43.6-4.6,65.5-10.8c3.7-24.5,3.8-49.7,0-74.9c-22.2-6.5-44.2-9.7-65.5-10.9
-	C525.3,377.2,524.9,410.4,516.6,441.4z"/>
-<path class="st1" d="M449.8,345.5c6.1,14.7,9.4,30.7,9.4,47.6s-3.4,32.9-9.4,47.6c21.2,1.4,43.7,2.1,66.8,0.7
-	c8.3-31,8.7-64.2,0-96.7C493.5,343.3,471.1,344.2,449.8,345.5z"/>
-<path class="st2" d="M449.8,440.7c12.6-30.4,12.6-64.8,0-95.2l-114.9,47.6L449.8,440.7z"/>
-<path class="st3" d="M153.2,344.7c-21.4,1.3-43.3,4.5-65.5,10.9c-3.7,24.5-3.8,49.7,0,74.9c21.9,6.3,44,9.5,65.5,10.8
-	C144.5,408.9,145,375.7,153.2,344.7z"/>
-<path class="st4" d="M220,440.7L220,440.7c-6.1-14.7-9.4-30.7-9.4-47.6s3.4-32.9,9.4-47.6l0,0c-21.3-1.3-43.6-2.1-66.7-0.8
-	c-8.3,31-8.7,64.2,0,96.7C176.3,442.8,198.7,442.1,220,440.7z"/>
-<path class="st5" d="M220,345.5c-12.6,30.4-12.6,64.8,0,95.2l114.9-47.6L220,345.5z"/>
-<path class="st6" d="M287.3,278.2l47.6,114.9l47.6-114.9C352.1,265.6,317.7,265.6,287.3,278.2z"/>
-<path class="st7" d="M287.3,278.2L287.3,278.2c14.7-6.1,30.7-9.4,47.6-9.4s32.9,3.4,47.6,9.4l0,0l0,0c1.3-21.3,2.1-43.6,0.8-66.7
-	c-31-8.3-64.2-8.7-96.7,0C285.2,234.4,285.9,256.9,287.3,278.2z"/>
-<path class="st8" d="M383.3,211.4c-1.3-21.4-4.5-43.3-10.9-65.5c-24.5-3.7-49.7-3.8-74.9,0c-6.3,21.9-9.5,44-10.8,65.5
-	C319.1,202.7,352.3,203.2,383.3,211.4z"/>
-<path class="st9" d="M286.6,574.8c1.3,21.6,4.6,43.6,10.8,65.5c24.5,3.7,49.7,3.8,74.9,0c6.5-22.2,9.6-44.2,10.9-65.5
-	C350.8,583.5,317.6,583,286.6,574.8z"/>
-<path class="st10" d="M382.5,508L382.5,508c-14.7,6.1-30.7,9.4-47.6,9.4S302,514,287.3,508l0,0c-1.4,21.2-2.1,43.7-0.7,66.8
-	c31,8.3,64.2,8.7,96.7,0C384.7,551.7,383.8,529.3,382.5,508z"/>
-<path class="st11" d="M382.5,508l-47.6-114.9L287.3,508C317.7,520.6,352.1,520.6,382.5,508z"/>
-<path class="st12" d="M220,345.5l114.9,47.6l-47.6-114.9C256.9,290.8,232.6,315.1,220,345.5z"/>
-<path class="st13" d="M220,345.5L220,345.5c12.6-30.4,36.9-54.7,67.3-67.3l0,0c-14.1-16-29.4-32.4-46.7-47.7
-	c-29.1,16.8-52.3,40.6-68.4,68.4C187.6,316.1,204,331.5,220,345.5z"/>
-<path class="st14" d="M240.6,230.4c-16-14.2-33.8-27.5-54.1-38.6c-20.5,15.1-38.3,33-52.9,53c11.1,19.9,24.4,37.8,38.7,54
-	C188.3,271.1,211.5,247.2,240.6,230.4z"/>
-<path class="st15" d="M172.2,487.4c-14.2,16-27.5,33.8-38.6,54.1c15.1,20.5,33,38.3,53,52.9c19.9-11.1,37.8-24.4,54-38.7
-	C212.9,539.7,189,516.5,172.2,487.4z"/>
-<path class="st16" d="M287.3,508L287.3,508c-30.4-12.6-54.7-36.9-67.3-67.3l0,0c-16,14.1-32.4,29.4-47.7,46.7
-	c16.8,29.1,40.6,52.3,68.4,68.4C257.9,540.5,273.3,524,287.3,508z"/>
-<path class="st17" d="M287.3,508l47.6-114.9L220,440.7C232.6,471.1,256.9,495.4,287.3,508z"/>
-<path class="st18" d="M536.2,541.5c-11.1-20.3-24.4-38.1-38.6-54.1c-16,27.7-39.2,51.6-68.3,68.4c16.2,14.3,34.1,27.6,54,38.7
-	C503.7,579.3,521.5,561.4,536.2,541.5z"/>
-<path class="st19" d="M449.8,440.7c-12.6,30.4-36.9,54.7-67.3,67.3c14,16,29.4,32.4,46.7,47.7c29.1-16.8,52.3-40.6,68.3-68.4
-	C482.2,470.1,465.8,454.8,449.8,440.7z"/>
-<path class="st20" d="M449.8,440.7l-114.9-47.6L382.5,508C412.9,495.4,437.2,471.1,449.8,440.7z"/>
-<path class="st21" d="M334.9,393.1l114.9-47.6c-12.6-30.4-36.9-54.7-67.3-67.3L334.9,393.1z"/>
-<path class="st22" d="M382.5,278.1C382.5,278.1,382.5,278.2,382.5,278.1L382.5,278.1c30.4,12.6,54.7,36.9,67.3,67.3
-	c16-14,32.4-29.4,47.7-46.7c-16.8-29.1-40.6-52.3-68.4-68.3C411.9,245.8,396.6,262.2,382.5,278.1z"/>
-<path class="st23" d="M497.5,298.8c14.3-16.2,27.6-34.1,38.7-54c-15.1-20.5-33-38.3-53-52.9c-20.3,11.1-38.1,24.4-54.1,38.6
-	C456.9,246.5,480.7,269.7,497.5,298.8z"/>
+<rect y="128.7" class="st0" width="1190.6" height="574.2"/>
+<path class="st1" d="M516.6,461.4c21.6-1.3,43.6-4.6,65.5-10.8c3.7-24.5,3.8-49.7,0-74.9c-22.2-6.5-44.2-9.7-65.5-10.9
+	C525.3,397.2,524.9,430.4,516.6,461.4z"/>
+<path class="st2" d="M449.8,365.5c6.1,14.7,9.4,30.7,9.4,47.6s-3.4,32.9-9.4,47.6c21.2,1.4,43.7,2.1,66.8,0.7
+	c8.3-31,8.7-64.2,0-96.7C493.5,363.3,471.1,364.2,449.8,365.5z"/>
+<path class="st3" d="M449.8,460.7c12.6-30.4,12.6-64.8,0-95.2l-114.9,47.6L449.8,460.7z"/>
+<path class="st4" d="M153.2,364.7c-21.4,1.3-43.3,4.5-65.5,10.9c-3.7,24.5-3.8,49.7,0,74.9c21.9,6.3,44,9.5,65.5,10.8
+	C144.5,428.9,145,395.7,153.2,364.7z"/>
+<path class="st5" d="M220,460.7L220,460.7c-6.1-14.7-9.4-30.7-9.4-47.6s3.4-32.9,9.4-47.6l0,0c-21.3-1.3-43.6-2.1-66.7-0.8
+	c-8.3,31-8.7,64.2,0,96.7C176.3,462.8,198.7,462.1,220,460.7z"/>
+<path class="st6" d="M220,365.5c-12.6,30.4-12.6,64.8,0,95.2l114.9-47.6L220,365.5z"/>
+<path class="st7" d="M287.3,298.2l47.6,114.9l47.6-114.9C352.1,285.6,317.7,285.6,287.3,298.2z"/>
+<path class="st8" d="M287.3,298.2L287.3,298.2c14.7-6.1,30.7-9.4,47.6-9.4s32.9,3.4,47.6,9.4l0,0l0,0c1.3-21.3,2.1-43.6,0.8-66.7
+	c-31-8.3-64.2-8.7-96.7,0C285.2,254.4,285.9,276.9,287.3,298.2z"/>
+<path class="st9" d="M383.3,231.4c-1.3-21.4-4.5-43.3-10.9-65.5c-24.5-3.7-49.7-3.8-74.9,0c-6.3,21.9-9.5,44-10.8,65.5
+	C319.1,222.7,352.3,223.2,383.3,231.4z"/>
+<path class="st10" d="M286.6,594.8c1.3,21.6,4.6,43.6,10.8,65.5c24.5,3.7,49.7,3.8,74.9,0c6.5-22.2,9.6-44.2,10.9-65.5
+	C350.8,603.5,317.6,603,286.6,594.8z"/>
+<path class="st11" d="M382.5,528L382.5,528c-14.7,6.1-30.7,9.4-47.6,9.4S302,534,287.3,528l0,0c-1.4,21.2-2.1,43.7-0.7,66.8
+	c31,8.3,64.2,8.7,96.7,0C384.7,571.7,383.8,549.3,382.5,528z"/>
+<path class="st12" d="M382.5,528l-47.6-114.9L287.3,528C317.7,540.6,352.1,540.6,382.5,528z"/>
+<path class="st13" d="M220,365.5l114.9,47.6l-47.6-114.9C256.9,310.8,232.6,335.1,220,365.5z"/>
+<path class="st14" d="M220,365.5L220,365.5c12.6-30.4,36.9-54.7,67.3-67.3l0,0c-14.1-16-29.4-32.4-46.7-47.7
+	c-29.1,16.8-52.3,40.6-68.4,68.4C187.6,336.1,204,351.5,220,365.5z"/>
+<path class="st15" d="M240.6,250.4c-16-14.2-33.8-27.5-54.1-38.6c-20.5,15.1-38.3,33-52.9,53c11.1,19.9,24.4,37.8,38.7,54
+	C188.3,291.1,211.5,267.2,240.6,250.4z"/>
+<path class="st16" d="M172.2,507.4c-14.2,16-27.5,33.8-38.6,54.1c15.1,20.5,33,38.3,53,52.9c19.9-11.1,37.8-24.4,54-38.7
+	C212.9,559.7,189,536.5,172.2,507.4z"/>
+<path class="st17" d="M287.3,528L287.3,528c-30.4-12.6-54.7-36.9-67.3-67.3l0,0c-16,14.1-32.4,29.4-47.7,46.7
+	c16.8,29.1,40.6,52.3,68.4,68.4C257.9,560.5,273.3,544,287.3,528z"/>
+<path class="st18" d="M287.3,528l47.6-114.9L220,460.7C232.6,491.1,256.9,515.4,287.3,528z"/>
+<path class="st19" d="M536.2,561.5c-11.1-20.3-24.4-38.1-38.6-54.1c-16,27.7-39.2,51.6-68.3,68.4c16.2,14.3,34.1,27.6,54,38.7
+	C503.7,599.3,521.5,581.4,536.2,561.5z"/>
+<path class="st20" d="M449.8,460.7c-12.6,30.4-36.9,54.7-67.3,67.3c14,16,29.4,32.4,46.7,47.7c29.1-16.8,52.3-40.6,68.3-68.4
+	C482.2,490.1,465.8,474.8,449.8,460.7z"/>
+<path class="st21" d="M449.8,460.7l-114.9-47.6L382.5,528C412.9,515.4,437.2,491.1,449.8,460.7z"/>
+<path class="st22" d="M334.9,413.1l114.9-47.6c-12.6-30.4-36.9-54.7-67.3-67.3L334.9,413.1z"/>
+<path class="st23" d="M382.5,298.1C382.5,298.1,382.5,298.2,382.5,298.1L382.5,298.1c30.4,12.6,54.7,36.9,67.3,67.3
+	c16-14,32.4-29.4,47.7-46.7c-16.8-29.1-40.6-52.3-68.4-68.3C411.9,265.8,396.6,282.2,382.5,298.1z"/>
+<path class="st24" d="M497.5,318.8c14.3-16.2,27.6-34.1,38.7-54c-15.1-20.5-33-38.3-53-52.9c-20.3,11.1-38.1,24.4-54.1,38.6
+	C456.9,266.5,480.7,289.7,497.5,318.8z"/>
 <g>
-	<text transform="matrix(0.4739 0.8806 -0.8806 0.4739 240.5662 170.5404)" class="st24 st25 st26">ENNAKOINTI+ILO</text>
-	<text transform="matrix(0.4739 0.8806 -0.8806 0.4739 229.3357 174.9943)" class="st24 st25 st27">OPTIMISMI</text>
-	<text transform="matrix(0.8049 -1.2183 0.8343 0.5513 394.3491 235.5848)" class="st24 st25 st26">ILO+LUOTTAMUS</text>
-	<text transform="matrix(0.8049 -1.2183 0.8343 0.5513 404.3607 242.2004)" class="st24 st25 st27">RAKKAUS</text>
-	<text transform="matrix(0.9129 0.4082 -0.4082 0.9129 107.4498 289.3824)" class="st24 st25 st26">ENNAKOINTI+VIHA</text>
-	<text transform="matrix(0.9129 0.4082 -0.4082 0.9129 84.4762 292.255)" class="st24 st25 st27">AGRESSIIVISUUS</text>
-	<text transform="matrix(0.923 -0.3847 0.3847 0.923 485.9164 325.6499)" class="st24 st25 st28">LUOTTAMUS+PELKO</text>
-	<text transform="matrix(0.923 -0.3847 0.3847 0.923 490.5326 336.7254)" class="st24 st25 st29">ALISTUVUUS</text>
-	<text transform="matrix(0.9422 0.3352 -0.3352 0.9422 496.7826 459.1203)" class="st24 st25 st30">PELKO+YLLÄTYS</text>
-	<text transform="matrix(0.9422 0.3352 -0.3352 0.9422 485.5045 467.8453)" class="st24 st25 st31">KUNNIOITUS</text>
-	<text transform="matrix(0.4739 0.8806 -0.8806 0.4739 407.0632 548.9177)" class="st24 st25 st26">YLLÄTYS+SURU</text>
-	<text transform="matrix(0.4739 0.8806 -0.8806 0.4739 394.364 550.6418)" class="st24 st25 st27">PETTYMYS</text>
-	<text transform="matrix(0.923 -0.3847 0.3847 0.923 111.5777 479.6245)" class="st24 st25 st28">TYMPEYS+VIHA</text>
-	<text transform="matrix(0.923 -0.3847 0.3847 0.923 98.4727 498.0871)" class="st24 st25 st29">HALVEKSUNTA</text>
-	<text transform="matrix(0.8049 -1.2183 0.8343 0.5513 224.0948 618.4676)" class="st24 st25 st26">TYMPEYS+SURU</text>
-	<text transform="matrix(0.8049 -1.2183 0.8343 0.5513 246.8236 605.8345)" class="st24 st25 st27">SÄÄLI</text>
+	<text transform="matrix(0.4739 0.8806 -0.8806 0.4739 240.5662 190.5404)" class="st25 st26 st27">ENNAKOINTI+ILO</text>
+	<text transform="matrix(0.4739 0.8806 -0.8806 0.4739 229.3357 194.9943)" class="st25 st26 st28">OPTIMISMI</text>
+	<text transform="matrix(0.8049 -1.2183 0.8343 0.5513 394.3491 255.5848)" class="st25 st26 st27">ILO+LUOTTAMUS</text>
+	<text transform="matrix(0.8049 -1.2183 0.8343 0.5513 404.3607 262.2004)" class="st25 st26 st28">RAKKAUS</text>
+	<text transform="matrix(0.9129 0.4082 -0.4082 0.9129 107.4498 309.3824)" class="st25 st26 st27">ENNAKOINTI+VIHA</text>
+	<text transform="matrix(0.9129 0.4082 -0.4082 0.9129 84.4762 312.255)" class="st25 st26 st28">AGRESSIIVISUUS</text>
+	<text transform="matrix(0.923 -0.3847 0.3847 0.923 485.9164 345.6499)" class="st25 st26 st29">LUOTTAMUS+PELKO</text>
+	<text transform="matrix(0.923 -0.3847 0.3847 0.923 490.5326 356.7254)" class="st25 st26 st30">ALISTUVUUS</text>
+	<text transform="matrix(0.9422 0.3352 -0.3352 0.9422 496.7826 479.1203)" class="st25 st26 st31">PELKO+YLLÄTYS</text>
+	<text transform="matrix(0.9422 0.3352 -0.3352 0.9422 485.5045 487.8453)" class="st25 st26 st32">KUNNIOITUS</text>
+	<text transform="matrix(0.4739 0.8806 -0.8806 0.4739 407.0632 568.9177)" class="st25 st26 st27">YLLÄTYS+SURU</text>
+	<text transform="matrix(0.4739 0.8806 -0.8806 0.4739 394.364 570.6418)" class="st25 st26 st28">PETTYMYS</text>
+	<text transform="matrix(0.923 -0.3847 0.3847 0.923 111.5777 499.6245)" class="st25 st26 st29">TYMPEYS+VIHA</text>
+	<text transform="matrix(0.923 -0.3847 0.3847 0.923 98.4727 518.0871)" class="st25 st26 st30">HALVEKSUNTA</text>
+	<text transform="matrix(0.8049 -1.2183 0.8343 0.5513 224.0948 638.4676)" class="st25 st26 st27">TYMPEYS+SURU</text>
+	<text transform="matrix(0.8049 -1.2183 0.8343 0.5513 246.8236 625.8345)" class="st25 st26 st28">SÄÄLI</text>
 </g>
-<text transform="matrix(3.086208e-02 -0.9995 0.9995 3.086208e-02 126.8014 428.3248)" class="st24 st25 st27">ÄRTYMYS</text>
-<text transform="matrix(2.830629e-02 -0.9996 0.9996 2.830629e-02 229.346 416.373)" class="st24 st25 st27">RAIVO</text>
-<text transform="matrix(3.086208e-02 -0.9995 0.9995 3.086208e-02 180.8923 410.0191)" class="st24 st25 st27">VIHA</text>
+<text transform="matrix(3.086208e-02 -0.9995 0.9995 3.086208e-02 126.8014 448.3248)" class="st25 st26 st28">ÄRTYMYS</text>
+<text transform="matrix(2.830629e-02 -0.9996 0.9996 2.830629e-02 229.346 436.373)" class="st25 st26 st28">RAIVO</text>
+<text transform="matrix(3.086208e-02 -0.9995 0.9995 3.086208e-02 180.8923 430.0191)" class="st25 st26 st28">VIHA</text>
 <g>
-	<text transform="matrix(0.7398 -0.6729 0.6729 0.7398 237.4118 335.0248)" class="st24 st25 st32">OHJAILU</text>
-	<text transform="matrix(0.7398 -0.6729 0.6729 0.7398 203.3819 312.7761)" class="st24 st25 st32">ENNAKOINTI</text>
-	<text transform="matrix(0.6966 -0.7175 0.7175 0.6966 161.0985 270.1402)" class="st24 st25 st33">KIINNOSTUS</text>
-	<text transform="matrix(0.7398 -0.6729 0.6729 0.7398 386.1043 498.7471)" class="st24 st25 st32">HÄMMÄSTYS</text>
+	<text transform="matrix(0.7398 -0.6729 0.6729 0.7398 237.4118 355.0248)" class="st25 st26 st33">OHJAILU</text>
+	<text transform="matrix(0.7398 -0.6729 0.6729 0.7398 203.3819 332.7761)" class="st25 st26 st33">ENNAKOINTI</text>
+	<text transform="matrix(0.6966 -0.7175 0.7175 0.6966 161.0985 290.1402)" class="st25 st26 st34">KIINNOSTUS</text>
+	<text transform="matrix(0.7398 -0.6729 0.6729 0.7398 386.1043 518.7471)" class="st25 st26 st33">HÄMMÄSTYS</text>
 </g>
-<text transform="matrix(1.0264 0 0 1 315.2871 291.4387)" class="st24 st25 st33">HURMIO</text>
-<text transform="matrix(1.0264 0 0 1 325.2871 241.9548)" class="st24 st25 st33">ILO</text>
-<text transform="matrix(1.0264 0 0 1 308.2871 184.6252)" class="st24 st25 st33">TYYNEYS</text>
-<text transform="matrix(1.0264 0 0 1 310.2974 505.5275)" class="st34 st25 st33">MURHE</text>
+<text transform="matrix(1.0264 0 0 1 315.2871 311.4387)" class="st25 st26 st34">HURMIO</text>
+<text transform="matrix(1.0264 0 0 1 325.2871 261.9548)" class="st25 st26 st34">ILO</text>
+<text transform="matrix(1.0264 0 0 1 308.2871 204.6252)" class="st25 st26 st34">TYYNEYS</text>
+<text transform="matrix(1.0264 0 0 1 310.2974 525.5275)" class="st35 st26 st34">MURHE</text>
 <g>
-	<text transform="matrix(0.6729 0.7398 -0.7398 0.6729 397.4221 301.4961)" class="st24 st25 st32">IHAILU</text>
-	<text transform="matrix(0.6729 0.7398 -0.7398 0.6729 417.7693 258.4033)" class="st24 st25 st32">LUOTTAMUS</text>
-	<text transform="matrix(0.6729 0.7398 -0.7398 0.6729 458.3982 213.7194)" class="st24 st25 st32">HYVÄKSYNTÄ</text>
+	<text transform="matrix(0.6729 0.7398 -0.7398 0.6729 397.4221 321.4961)" class="st25 st26 st33">IHAILU</text>
+	<text transform="matrix(0.6729 0.7398 -0.7398 0.6729 417.7693 278.4033)" class="st25 st26 st33">LUOTTAMUS</text>
+	<text transform="matrix(0.6729 0.7398 -0.7398 0.6729 458.3982 233.7194)" class="st25 st26 st33">HYVÄKSYNTÄ</text>
 </g>
-<text transform="matrix(-1.415458e-02 0.9999 -0.9999 -1.415458e-02 443.6322 367.1713)" class="st24 st25 st33">KAUHU</text>
-<text transform="matrix(5.208200e-03 1 -1 5.208200e-03 544.0361 348.9858)" class="st24 st25 st33">LEVOTTOMUUS</text>
-<text transform="matrix(4.959472e-02 0.9988 -0.9988 4.959472e-02 485.4486 370.3062)" class="st24 st25 st33">PELKO</text>
+<text transform="matrix(-1.415458e-02 0.9999 -0.9999 -1.415458e-02 443.6322 387.1713)" class="st25 st26 st34">KAUHU</text>
+<text transform="matrix(5.208200e-03 1 -1 5.208200e-03 544.0361 368.9858)" class="st25 st26 st34">LEVOTTOMUUS</text>
+<text transform="matrix(4.959472e-02 0.9988 -0.9988 4.959472e-02 485.4486 390.3062)" class="st25 st26 st34">PELKO</text>
 <g>
-	<text transform="matrix(0.7398 -0.6729 0.6729 0.7398 426.8046 526.5139)" class="st24 st25 st32">YLLÄTYS</text>
-	<text transform="matrix(0.6966 -0.7175 0.7175 0.6966 467.5829 578.2217)" class="st24 st25 st33">HÄMMENNYS</text>
+	<text transform="matrix(0.7398 -0.6729 0.6729 0.7398 426.8046 546.5139)" class="st25 st26 st33">YLLÄTYS</text>
+	<text transform="matrix(0.6966 -0.7175 0.7175 0.6966 467.5829 598.2217)" class="st25 st26 st34">HÄMMENNYS</text>
 </g>
 <g>
-	<text transform="matrix(1.0814 1.530769e-02 -1.415458e-02 0.9999 291.3605 610.5114)" class="st24 st25 st33">APAATTISUUS</text>
+	<text transform="matrix(1.0814 1.530769e-02 -1.415458e-02 0.9999 291.3605 630.5114)" class="st25 st26 st34">APAATTISUUS</text>
 </g>
-<text transform="matrix(0.7175 0.6966 -0.6966 0.7175 159.2262 531.9713)" class="st24 st25 st33">TYLSYYS</text>
-<text transform="matrix(0.7175 0.6966 -0.6966 0.7175 201.5954 487.4566)" class="st24 st25 st33">TYMPEYS</text>
-<text transform="matrix(0.7175 0.6966 -0.6966 0.7175 241.1803 464.5933)" class="st35 st25 st33">INHO</text>
-<text transform="matrix(1.0264 0 0 1 314.9468 557.9367)" class="st24 st25 st33">SURU</text>
-<text transform="matrix(1.0264 0 0 1 167.6425 712.3987)" class="st24 st25 st36">HYVÄN MIELEN RYHMÄ</text>
-<text transform="matrix(1 0 0 1 69.4519 90.6165)" class="st25 st37">ILO, LUOTTAMUS, PELKO, YLLÄTYS, SURU, TYMPEYS, VIHA, ENNAKKOINTI</text>
+<text transform="matrix(0.7175 0.6966 -0.6966 0.7175 159.2262 551.9713)" class="st25 st26 st34">TYLSYYS</text>
+<text transform="matrix(0.7175 0.6966 -0.6966 0.7175 201.5954 507.4566)" class="st25 st26 st34">TYMPEYS</text>
+<text transform="matrix(0.7175 0.6966 -0.6966 0.7175 241.1803 484.5933)" class="st36 st26 st34">INHO</text>
+<text transform="matrix(1.0264 0 0 1 314.9468 577.9367)" class="st25 st26 st34">SURU</text>
+<text transform="matrix(1.0264 0 0 1 67.6425 766.3987)" class="st25 st26 st37">HYVÄN MIELEN RYHMÄ</text>
+<text transform="matrix(1 0 0 1 51.4519 103.6165)" class="st26 st38">ILO, LUOTTAMUS, PELKO, YLLÄTYS, SURU, TYMPEYS, VIHA, ENNAKKOINTI</text>
 <g>
 	<g>
-		<rect x="820" y="184.5" class="st38" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 842.9406 193.9304)" class="st24 st25 st26">ILO</text>
+		<rect x="820" y="204.5" class="st39" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 842.9406 213.9304)" class="st25 st26 st27">ILO</text>
 	</g>
 	<g>
-		<rect x="882" y="167.5" class="st39" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 884.0906 176.9304)" class="st24 st25 st26">LUOTTAMUS</text>
+		<rect x="882" y="187.5" class="st40" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 884.0906 196.9304)" class="st25 st26 st27">LUOTTAMUS</text>
 	</g>
-	<text transform="matrix(1.0264 0 0 1 944.4033 177.2575)" class="st24 st25 st26">RAKKAUS</text>
-	<text transform="matrix(1.0264 0 0 1 944.3892 193.7575)" class="st24 st25 st26">SYYLLISYYS</text>
-	<text transform="matrix(1.0264 0 0 1 945.3623 210.2575)" class="st24 st25 st26">IHASTUS</text>
-	<text transform="matrix(1.0264 0 0 1 944.9092 227.8532)" class="st24 st25 st26">KATKERANSULOISUUS</text>
-	<text transform="matrix(1.0264 0 0 1 944.9697 244.7575)" class="st24 st25 st26">SARKASTISUUS</text>
-	<text transform="matrix(1.0264 0 0 1 945.7783 261.7575)" class="st24 st25 st26">YLPEYS</text>
-	<text transform="matrix(1.0264 0 0 1 945.7959 279.2575)" class="st24 st25 st26">OPTIMISMI</text>
-	<text transform="matrix(1.0264 0 0 1 945.3252 296.7575)" class="st24 st25 st26">ALISTUVUUS</text>
-	<text transform="matrix(1.0264 0 0 1 945.3838 313.2575)" class="st24 st25 st26">UTELIAISUUS</text>
-	<text transform="matrix(1.0264 0 0 1 945.1885 330.2575)" class="st24 st25 st26">TUNTEELLISUUS</text>
-	<text transform="matrix(1.0264 0 0 1 946.0146 347.2575)" class="st24 st25 st26">EPÄVAKAUS</text>
-	<text transform="matrix(1.0264 0 0 1 945.5674 363.5368)" class="st24 st25 st26">PAHEKSUNTA</text>
-	<text transform="matrix(1.0264 0 0 1 945.4463 381.0368)" class="st24 st25 st26">KOHTALONOMAISUUS</text>
-	<text transform="matrix(1.0264 0 0 1 945.3184 397.0368)" class="st24 st25 st26">SÄIKÄHDYS</text>
-	<text transform="matrix(1.0264 0 0 1 945.5264 415.0358)" class="st24 st25 st26">HEMPEILY</text>
-	<text transform="matrix(1.0264 0 0 1 945.9482 431.2575)" class="st24 st25 st26">HÄPEÄ</text>
-	<text transform="matrix(1.0264 0 0 1 946.0029 448.5358)" class="st24 st25 st26">JÄÄTÄVYYS</text>
-	<text transform="matrix(1.0264 0 0 1 946.0635 466.0358)" class="st24 st25 st26">LEVOTTOMUUS</text>
-	<text transform="matrix(1.0264 0 0 1 945.9463 481.7575)" class="st24 st25 st26">PETTYMYS</text>
-	<text transform="matrix(1.0264 0 0 1 945.4521 499.7575)" class="st24 st25 st26">EPÄUSKO</text>
-	<text transform="matrix(1.0264 0 0 1 945.5791 517.0358)" class="st24 st25 st26">TYRMISTYS</text>
-	<text transform="matrix(1.0264 0 0 1 945.8564 533.7575)" class="st24 st25 st26">SEKAANNUS</text>
-	<text transform="matrix(1.0264 0 0 1 946.0459 567.4382)" class="st24 st25 st26">KATEUS</text>
-	<text transform="matrix(1.0264 0 0 1 945.8135 585.4582)" class="st24 st25 st26">PESSIMISMI</text>
-	<text transform="matrix(1.0264 0 0 1 945.5801 550.7077)" class="st24 st25 st26">KATUMUS</text>
-	<text transform="matrix(1.0264 0 0 1 946.4414 601.757)" class="st24 st25 st26">HALVEKSUNTA</text>
-	<text transform="matrix(1.0264 0 0 1 946.3428 618.757)" class="st24 st25 st26">KÄRKEVYYS</text>
-	<text transform="matrix(1.0264 0 0 1 946.5674 635.5363)" class="st24 st25 st26">AGRESSIIVISUUS</text>
+	<text transform="matrix(1.0264 0 0 1 944.4033 197.2575)" class="st25 st26 st27">RAKKAUS</text>
+	<text transform="matrix(1.0264 0 0 1 944.3892 213.7575)" class="st25 st26 st27">SYYLLISYYS</text>
+	<text transform="matrix(1.0264 0 0 1 945.3623 230.2575)" class="st25 st26 st27">IHASTUS</text>
+	<text transform="matrix(1.0264 0 0 1 944.9092 247.8532)" class="st25 st26 st27">KATKERANSULOISUUS</text>
+	<text transform="matrix(1.0264 0 0 1 944.9697 264.7575)" class="st25 st26 st27">SARKASTISUUS</text>
+	<text transform="matrix(1.0264 0 0 1 945.7783 281.7575)" class="st25 st26 st27">YLPEYS</text>
+	<text transform="matrix(1.0264 0 0 1 945.7959 299.2575)" class="st25 st26 st27">OPTIMISMI</text>
+	<text transform="matrix(1.0264 0 0 1 945.3252 316.7575)" class="st25 st26 st27">ALISTUVUUS</text>
+	<text transform="matrix(1.0264 0 0 1 945.3838 333.2575)" class="st25 st26 st27">UTELIAISUUS</text>
+	<text transform="matrix(1.0264 0 0 1 945.1885 350.2575)" class="st25 st26 st27">TUNTEELLISUUS</text>
+	<text transform="matrix(1.0264 0 0 1 946.0146 367.2575)" class="st25 st26 st27">EPÄVAKAUS</text>
+	<text transform="matrix(1.0264 0 0 1 945.5674 383.5368)" class="st25 st26 st27">PAHEKSUNTA</text>
+	<text transform="matrix(1.0264 0 0 1 945.4463 401.0368)" class="st25 st26 st27">KOHTALONOMAISUUS</text>
+	<text transform="matrix(1.0264 0 0 1 945.3184 417.0368)" class="st25 st26 st27">SÄIKÄHDYS</text>
+	<text transform="matrix(1.0264 0 0 1 945.5264 435.0358)" class="st25 st26 st27">HEMPEILY</text>
+	<text transform="matrix(1.0264 0 0 1 945.9482 451.2575)" class="st25 st26 st27">HÄPEÄ</text>
+	<text transform="matrix(1.0264 0 0 1 946.0029 468.5358)" class="st25 st26 st27">JÄÄTÄVYYS</text>
+	<text transform="matrix(1.0264 0 0 1 946.0635 486.0358)" class="st25 st26 st27">LEVOTTOMUUS</text>
+	<text transform="matrix(1.0264 0 0 1 945.9463 501.7575)" class="st25 st26 st27">PETTYMYS</text>
+	<text transform="matrix(1.0264 0 0 1 945.4521 519.7575)" class="st25 st26 st27">EPÄUSKO</text>
+	<text transform="matrix(1.0264 0 0 1 945.5791 537.0358)" class="st25 st26 st27">TYRMISTYS</text>
+	<text transform="matrix(1.0264 0 0 1 945.8564 553.7575)" class="st25 st26 st27">SEKAANNUS</text>
+	<text transform="matrix(1.0264 0 0 1 946.0459 587.4382)" class="st25 st26 st27">KATEUS</text>
+	<text transform="matrix(1.0264 0 0 1 945.8135 605.4582)" class="st25 st26 st27">PESSIMISMI</text>
+	<text transform="matrix(1.0264 0 0 1 945.5801 570.7077)" class="st25 st26 st27">KATUMUS</text>
+	<text transform="matrix(1.0264 0 0 1 946.4414 621.757)" class="st25 st26 st27">HALVEKSUNTA</text>
+	<text transform="matrix(1.0264 0 0 1 946.3428 638.757)" class="st25 st26 st27">KÄRKEVYYS</text>
+	<text transform="matrix(1.0264 0 0 1 946.5674 655.5363)" class="st25 st26 st27">AGRESSIIVISUUS</text>
 	<g>
-		<rect x="820" y="201.5" class="st38" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 842.9406 210.9304)" class="st24 st25 st26">ILO</text>
-	</g>
-	<g>
-		<rect x="820" y="473.5" class="st40" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 829.0906 482.9304)" class="st24 st25 st26">YLLÄTYS</text>
+		<rect x="820" y="221.5" class="st39" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 842.9406 230.9304)" class="st25 st26 st27">ILO</text>
 	</g>
 	<g>
-		<rect x="820" y="541.5" class="st41" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 837.9406 550.9303)" class="st24 st25 st26">SURU</text>
+		<rect x="820" y="493.5" class="st41" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 829.0906 502.9304)" class="st25 st26 st27">YLLÄTYS</text>
 	</g>
 	<g>
-		<rect x="820" y="592.5" class="st42" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 827.0906 601.9304)" class="st24 st25 st26">TYMPEYS</text>
+		<rect x="820" y="561.5" class="st42" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 837.9406 570.9303)" class="st25 st26 st27">SURU</text>
 	</g>
 	<g>
-		<rect x="820" y="626.5" class="st43" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 838.9406 635.9304)" class="st24 st25 st26">VIHA</text>
+		<rect x="820" y="612.5" class="st43" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 827.0906 621.9304)" class="st25 st26 st27">TYMPEYS</text>
 	</g>
 	<g>
-		<rect x="882" y="626.5" class="st44" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 885.0906 635.9304)" class="st24 st25 st26">ENNAKOINTI</text>
+		<rect x="820" y="646.5" class="st44" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 838.9406 655.9304)" class="st25 st26 st27">VIHA</text>
 	</g>
 	<g>
-		<rect x="820" y="218.5" class="st38" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 842.9406 227.9304)" class="st24 st25 st26">ILO</text>
+		<rect x="882" y="646.5" class="st45" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 885.0906 655.9304)" class="st25 st26 st27">ENNAKOINTI</text>
 	</g>
 	<g>
-		<rect x="820" y="235.5" class="st38" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 842.9406 244.9304)" class="st24 st25 st26">ILO</text>
+		<rect x="820" y="238.5" class="st39" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 842.9406 247.9304)" class="st25 st26 st27">ILO</text>
 	</g>
 	<g>
-		<rect x="820" y="252.5" class="st38" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 842.9406 261.9304)" class="st24 st25 st26">ILO</text>
+		<rect x="820" y="255.5" class="st39" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 842.9406 264.9304)" class="st25 st26 st27">ILO</text>
 	</g>
 	<g>
-		<rect x="820" y="269.5" class="st38" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 842.9406 278.9304)" class="st24 st25 st26">ILO</text>
+		<rect x="820" y="272.5" class="st39" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 842.9406 281.9304)" class="st25 st26 st27">ILO</text>
 	</g>
 	<g>
-		<rect x="882" y="184.5" class="st45" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 897.9406 193.9304)" class="st24 st25 st26">PELKO</text>
+		<rect x="820" y="289.5" class="st39" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 842.9406 298.9304)" class="st25 st26 st27">ILO</text>
 	</g>
 	<g>
-		<rect x="882" y="201.5" class="st40" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 891.0906 210.9304)" class="st24 st25 st26">YLLÄTYS</text>
+		<rect x="882" y="204.5" class="st46" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 897.9406 213.9304)" class="st25 st26 st27">PELKO</text>
 	</g>
 	<g>
-		<rect x="882" y="218.5" class="st41" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 899.9406 227.9304)" class="st24 st25 st26">SURU</text>
+		<rect x="882" y="221.5" class="st41" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 891.0906 230.9304)" class="st25 st26 st27">YLLÄTYS</text>
 	</g>
 	<g>
-		<rect x="882" y="235.5" class="st42" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 889.0906 244.9304)" class="st24 st25 st26">TYMPEYS</text>
+		<rect x="882" y="238.5" class="st42" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 899.9406 247.9304)" class="st25 st26 st27">SURU</text>
 	</g>
 	<g>
-		<rect x="882" y="252.5" class="st43" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 900.9406 261.9304)" class="st24 st25 st26">VIHA</text>
+		<rect x="882" y="255.5" class="st43" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 889.0906 264.9304)" class="st25 st26 st27">TYMPEYS</text>
 	</g>
 	<g>
-		<rect x="882" y="269.5" class="st44" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 885.0906 278.9304)" class="st24 st25 st26">ENNAKOINTI</text>
+		<rect x="882" y="272.5" class="st44" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 900.9406 281.9304)" class="st25 st26 st27">VIHA</text>
 	</g>
 	<g>
-		<rect x="882" y="286.5" class="st45" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 897.9406 295.9304)" class="st24 st25 st26">PELKO</text>
+		<rect x="882" y="289.5" class="st45" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 885.0906 298.9304)" class="st25 st26 st27">ENNAKOINTI</text>
 	</g>
 	<g>
-		<rect x="882" y="303.5" class="st40" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 891.0906 312.9304)" class="st24 st25 st26">YLLÄTYS</text>
+		<rect x="882" y="306.5" class="st46" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 897.9406 315.9304)" class="st25 st26 st27">PELKO</text>
 	</g>
 	<g>
-		<rect x="882" y="320.5" class="st41" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 899.9406 329.9304)" class="st24 st25 st26">SURU</text>
+		<rect x="882" y="323.5" class="st41" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 891.0906 332.9304)" class="st25 st26 st27">YLLÄTYS</text>
 	</g>
 	<g>
-		<rect x="882" y="337.5" class="st42" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 889.0906 346.9304)" class="st24 st25 st26">TYMPEYS</text>
+		<rect x="882" y="340.5" class="st42" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 899.9406 349.9304)" class="st25 st26 st27">SURU</text>
 	</g>
 	<g>
-		<rect x="882" y="354.5" class="st43" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 900.9406 363.9304)" class="st24 st25 st26">VIHA</text>
+		<rect x="882" y="357.5" class="st43" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 889.0906 366.9304)" class="st25 st26 st27">TYMPEYS</text>
 	</g>
 	<g>
-		<rect x="882" y="371.5" class="st44" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 885.0906 380.9304)" class="st24 st25 st26">ENNAKOINTI</text>
+		<rect x="882" y="374.5" class="st44" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 900.9406 383.9304)" class="st25 st26 st27">VIHA</text>
 	</g>
 	<g>
-		<rect x="820" y="286.5" class="st39" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 822.0906 295.9304)" class="st24 st25 st26">LUOTTAMUS</text>
+		<rect x="882" y="391.5" class="st45" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 885.0906 400.9304)" class="st25 st26 st27">ENNAKOINTI</text>
 	</g>
 	<g>
-		<rect x="820" y="303.5" class="st39" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 822.0903 312.9304)" class="st24 st25 st26">LUOTTAMUS</text>
+		<rect x="820" y="306.5" class="st40" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 822.0906 315.9304)" class="st25 st26 st27">LUOTTAMUS</text>
 	</g>
 	<g>
-		<rect x="820" y="320.5" class="st39" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 822.0906 329.9304)" class="st24 st25 st26">LUOTTAMUS</text>
+		<rect x="820" y="323.5" class="st40" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 822.0903 332.9304)" class="st25 st26 st27">LUOTTAMUS</text>
 	</g>
 	<g>
-		<rect x="820" y="337.5" class="st39" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 822.0903 346.9304)" class="st24 st25 st26">LUOTTAMUS</text>
+		<rect x="820" y="340.5" class="st40" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 822.0906 349.9304)" class="st25 st26 st27">LUOTTAMUS</text>
 	</g>
 	<g>
-		<rect x="820" y="354.5" class="st39" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 822.0906 363.9304)" class="st24 st25 st26">LUOTTAMUS</text>
+		<rect x="820" y="357.5" class="st40" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 822.0903 366.9304)" class="st25 st26 st27">LUOTTAMUS</text>
 	</g>
 	<g>
-		<rect x="820" y="371.5" class="st39" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 822.0903 380.9304)" class="st24 st25 st26">LUOTTAMUS</text>
+		<rect x="820" y="374.5" class="st40" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 822.0906 383.9304)" class="st25 st26 st27">LUOTTAMUS</text>
 	</g>
 	<g>
-		<rect x="820" y="388.5" class="st45" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 835.9406 397.9304)" class="st24 st25 st26">PELKO</text>
+		<rect x="820" y="391.5" class="st40" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 822.0903 400.9304)" class="st25 st26 st27">LUOTTAMUS</text>
 	</g>
 	<g>
-		<rect x="820" y="167.5" class="st38" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 842.9406 176.9304)" class="st24 st25 st26">ILO</text>
+		<rect x="820" y="408.5" class="st46" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 835.9406 417.9304)" class="st25 st26 st27">PELKO</text>
 	</g>
 	<g>
-		<rect x="820" y="405.5" class="st45" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 835.9406 414.9304)" class="st24 st25 st26">PELKO</text>
+		<rect x="820" y="187.5" class="st39" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 842.9406 196.9304)" class="st25 st26 st27">ILO</text>
 	</g>
 	<g>
-		<rect x="820" y="422.5" class="st45" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 835.9406 431.9304)" class="st24 st25 st26">PELKO</text>
+		<rect x="820" y="425.5" class="st46" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 835.9406 434.9304)" class="st25 st26 st27">PELKO</text>
 	</g>
 	<g>
-		<rect x="820" y="439.5" class="st45" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 835.9406 448.9304)" class="st24 st25 st26">PELKO</text>
+		<rect x="820" y="442.5" class="st46" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 835.9406 451.9304)" class="st25 st26 st27">PELKO</text>
 	</g>
 	<g>
-		<rect x="820" y="456.5" class="st45" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 835.9406 465.9304)" class="st24 st25 st26">PELKO</text>
+		<rect x="820" y="459.5" class="st46" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 835.9406 468.9304)" class="st25 st26 st27">PELKO</text>
 	</g>
 	<g>
-		<rect x="882" y="388.5" class="st40" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 891.0906 397.9304)" class="st24 st25 st26">YLLÄTYS</text>
+		<rect x="820" y="476.5" class="st46" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 835.9406 485.9304)" class="st25 st26 st27">PELKO</text>
 	</g>
 	<g>
-		<rect x="882" y="405.5" class="st41" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 899.9406 414.9304)" class="st24 st25 st26">SURU</text>
+		<rect x="882" y="408.5" class="st41" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 891.0906 417.9304)" class="st25 st26 st27">YLLÄTYS</text>
 	</g>
 	<g>
-		<rect x="882" y="422.5" class="st42" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 889.0906 431.9304)" class="st24 st25 st26">TYMPEYS</text>
+		<rect x="882" y="425.5" class="st42" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 899.9406 434.9304)" class="st25 st26 st27">SURU</text>
 	</g>
 	<g>
-		<rect x="882" y="439.5" class="st43" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 900.9406 448.9304)" class="st24 st25 st26">VIHA</text>
+		<rect x="882" y="442.5" class="st43" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 889.0906 451.9304)" class="st25 st26 st27">TYMPEYS</text>
 	</g>
 	<g>
-		<rect x="882" y="456.5" class="st44" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 885.0906 465.9304)" class="st24 st25 st26">ENNAKOINTI</text>
+		<rect x="882" y="459.5" class="st44" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 900.9406 468.9304)" class="st25 st26 st27">VIHA</text>
 	</g>
 	<g>
-		<rect x="820" y="490.5" class="st40" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 829.0906 499.9304)" class="st24 st25 st26">YLLÄTYS</text>
+		<rect x="882" y="476.5" class="st45" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 885.0906 485.9304)" class="st25 st26 st27">ENNAKOINTI</text>
 	</g>
 	<g>
-		<rect x="820" y="507.5" class="st40" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 829.0906 516.9304)" class="st24 st25 st26">YLLÄTYS</text>
+		<rect x="820" y="510.5" class="st41" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 829.0906 519.9304)" class="st25 st26 st27">YLLÄTYS</text>
 	</g>
 	<g>
-		<rect x="820" y="524.5" class="st40" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 829.0906 533.9304)" class="st24 st25 st26">YLLÄTYS</text>
+		<rect x="820" y="527.5" class="st41" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 829.0906 536.9304)" class="st25 st26 st27">YLLÄTYS</text>
 	</g>
 	<g>
-		<rect x="882" y="473.5" class="st41" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 899.9406 482.9304)" class="st24 st25 st26">SURU</text>
+		<rect x="820" y="544.5" class="st41" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 829.0906 553.9304)" class="st25 st26 st27">YLLÄTYS</text>
 	</g>
 	<g>
-		<rect x="882" y="490.5" class="st42" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 889.0906 499.9304)" class="st24 st25 st26">TYMPEYS</text>
+		<rect x="882" y="493.5" class="st42" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 899.9406 502.9304)" class="st25 st26 st27">SURU</text>
 	</g>
 	<g>
-		<rect x="882" y="507.5" class="st43" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 900.9406 516.9304)" class="st24 st25 st26">VIHA</text>
+		<rect x="882" y="510.5" class="st43" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 889.0906 519.9304)" class="st25 st26 st27">TYMPEYS</text>
 	</g>
 	<g>
-		<rect x="882" y="524.5" class="st44" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 885.0906 533.9304)" class="st24 st25 st26">ENNAKOINTI</text>
+		<rect x="882" y="527.5" class="st44" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 900.9406 536.9304)" class="st25 st26 st27">VIHA</text>
 	</g>
 	<g>
-		<rect x="820" y="558.5" class="st41" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 837.9406 567.9303)" class="st24 st25 st26">SURU</text>
+		<rect x="882" y="544.5" class="st45" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 885.0906 553.9304)" class="st25 st26 st27">ENNAKOINTI</text>
 	</g>
 	<g>
-		<rect x="820" y="575.5" class="st41" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 837.9406 584.9304)" class="st24 st25 st26">SURU</text>
+		<rect x="820" y="578.5" class="st42" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 837.9406 587.9304)" class="st25 st26 st27">SURU</text>
 	</g>
 	<g>
-		<rect x="882" y="541.5" class="st42" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 889.0906 550.9304)" class="st24 st25 st26">TYMPEYS</text>
+		<rect x="820" y="595.5" class="st42" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 837.9406 604.9304)" class="st25 st26 st27">SURU</text>
 	</g>
 	<g>
-		<rect x="882" y="558.5" class="st43" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 900.9406 567.9304)" class="st24 st25 st26">VIHA</text>
+		<rect x="882" y="561.5" class="st43" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 889.0906 570.9304)" class="st25 st26 st27">TYMPEYS</text>
 	</g>
 	<g>
-		<rect x="882" y="575.5" class="st44" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 885.0906 584.9304)" class="st24 st25 st26">ENNAKOINTI</text>
+		<rect x="882" y="578.5" class="st44" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 900.9406 587.9304)" class="st25 st26 st27">VIHA</text>
 	</g>
 	<g>
-		<rect x="820" y="609.5" class="st42" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 827.0906 618.9304)" class="st24 st25 st26">TYMPEYS</text>
+		<rect x="882" y="595.5" class="st45" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 885.0906 604.9304)" class="st25 st26 st27">ENNAKOINTI</text>
 	</g>
 	<g>
-		<rect x="882" y="592.5" class="st43" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 900.9406 601.9304)" class="st24 st25 st26">VIHA</text>
+		<rect x="820" y="629.5" class="st43" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 827.0906 638.9304)" class="st25 st26 st27">TYMPEYS</text>
 	</g>
 	<g>
-		<rect x="882" y="609.5" class="st44" width="60" height="15"/>
-		<text transform="matrix(1.0264 0 0 1 885.0906 618.9304)" class="st24 st25 st26">ENNAKOINTI</text>
+		<rect x="882" y="612.5" class="st44" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 900.9406 621.9304)" class="st25 st26 st27">VIHA</text>
+	</g>
+	<g>
+		<rect x="882" y="629.5" class="st45" width="60" height="15"/>
+		<text transform="matrix(1.0264 0 0 1 885.0906 638.9304)" class="st25 st26 st27">ENNAKOINTI</text>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 59.6516 75.2574)" class="st25 st46">KAHDEKSAN PERUSTUNNETTA</text>
-<text transform="matrix(1 0 0 1 820.0001 150.3248)"><tspan x="0" y="0" class="st25 st26">KAIKKI EMOOTIOT RAKENTUVAT </tspan><tspan x="0" y="7.2" class="st25 st26">PERUSTUNTEIDEN PÄÄLLE</tspan></text>
-<text transform="matrix(1 0 0 1 168.7935 721.7198)" class="st25 st26">Malli on käännetty suomeksi psykologi Robert Plutchikin kehittämästä tunteiden pyörästä</text>
-<rect class="st47" width="1190.6" height="841.9"/>
+<text transform="matrix(1 0 0 1 51.6516 76.2574)" class="st26 st47">KAHDEKSAN PERUSTUNNETTA</text>
+<text transform="matrix(1 0 0 1 820.0001 170.3248)"><tspan x="0" y="0" class="st26 st27">EMOOTIOT RAKENTUVAT </tspan><tspan x="0" y="7.2" class="st26 st27">PERUSTUNTEIDEN PÄÄLLE</tspan></text>
+<text transform="matrix(1 0 0 1 67.7935 776.7198)" class="st26 st48">Malli on käännetty suomeksi psykologi Robert Plutchikin kehittämästä tunteiden pyörästä</text>
+<text transform="matrix(1 0 0 1 686.5999 722.2894)"><tspan x="0" y="0" class="st26 st28">Emootiot ilmentävät yksilöllisen tunnekokemuksen </tspan><tspan x="0" y="12" class="st26 st28">lisäksi myös yksilön ja sosiaaliskulttuurisen ympäristön</tspan><tspan x="0" y="24" class="st26 st28">suhdetta, ja ne nähdään sekä ruumiillisina että </tspan><tspan x="0" y="36" class="st26 st28">sosiaalisina kokemuksina.</tspan></text>
+<text transform="matrix(1 0 0 1 686.582 776.2892)"><tspan x="0" y="0" class="st26 st28">Tunteilla tarkoitetaan, että kehossa ja mielessä </tspan><tspan x="0" y="12" class="st26 st28">tuntuu joltakin. Tunteet saavat meidät usein </tspan><tspan x="0" y="24" class="st26 st28">toimimaan ja tekemään jotakin. Tunteet ovat yksilöllisiä: </tspan><tspan x="0" y="36" class="st26 st28">ihmiset voivat kokea samoissa tilanteissa hyvinkin erilaisia tunteita.</tspan></text>
 </svg>
