@@ -35,12 +35,12 @@ ul.checktree li:last-child { border-left: none; }
 <title>Vahvuudet</title>
 </head>
 	<body>
-
+<div id="myDiv">
     <div class="container">
     <h1>Vahvuudet</h1>
 		<ul class="checktree">
 				<li>
-				<input id="administration" type="checkbox" /><label for="administration">Valitse kohdat jotka kuvaavat sinua</label>
+				<input id="administration" type="checkbox" /><label for="administration">Valitse ne kohdat, jotka kuvaavat sinua parhaiten</label>
 				<ul>
 					<li>
 						<input id="president" type="checkbox" /><label for="president">VIISAUS</label>
@@ -48,12 +48,12 @@ ul.checktree li:last-child { border-left: none; }
 							<li>
 								<input id="manager1" type="checkbox" /><label for="manager1">Luovuus</label>
 								<ul>
-									<li><input id="viisaus1" type="checkbox" /><label for="viisaus1">Tuotan monenlaisia ratkaisuja tilanteisiin
+									<li><input id="viisaus1" type="checkbox" value="A1"/>Tuotan monenlaisia ratkaisuja tilanteisiin
 </label></li>
-									<li><input id="viisaus2" type="checkbox" /><label for="viisaus2">Ilmaisen itseäni monipuolisesti</label></li>
-									<li><input id="viisaus3" type="checkbox" /><label for="viisaus3">Kehitän uusia toimintatapoja</label></li>
-									<li><input id="viisaus4" type="checkbox" /><label for="viisaus4">Nautin asioiden ratkaisemisesta</label></li>
-									<li><input id="viisaus5" type="checkbox" /><label for="viisaus5">Pidän uusien asioiden kokeilemisesta</label></li>	
+									<li><input id="viisaus2" type="checkbox" value="A2"/>Ilmaisen itseäni monipuolisesti</label></li>
+									<li><input id="viisaus3" type="checkbox" value="A3"/>Kehitän uusia toimintatapoja</label></li>
+									<li><input id="viisaus4" type="checkbox" value="A4"/>Nautin asioiden ratkaisemisesta</label></li>
+									<li><input id="viisaus5" type="checkbox" value="A5"/>Pidän uusien asioiden kokeilemisesta</label></li>	
 								</ul>
 							</li>
 							<li>
@@ -363,7 +363,6 @@ ul.checktree li:last-child { border-left: none; }
 	});
 	
 	
-	
 	(function($){
     $.fn.checktree = function(){
         $(':checkbox').on('click', function (event){
@@ -381,6 +380,21 @@ ul.checktree li:last-child { border-left: none; }
          });
     };
 }(jQuery));
+
+
+$('#myDiv').change(function() {
+  var data = [];
+  {
+    $('#myDiv :checked').each(function() {
+      //if(values.indexOf($(this).val()) === -1){
+      //values=values+parseFloat(($(this).val()));
+      data.push($(this).val());
+      // }
+    });
+    console.log(data);
+  }
+});
 	</script>
+</div>	
 </body>
 </html>
