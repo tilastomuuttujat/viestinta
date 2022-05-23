@@ -4,12 +4,49 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css'>
 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <style>
-        body { background-color:#fafafa;}
-        .container { margin:150px auto; max-width:600px;}
-        body { margin: 0 auto; }
+body {
+  background-color: #e5e5e5;
+  height: 4000px;
+}
+body .content {
+  width: 100%;
+  height: 700px;
+  padding: 10px;
+  display: -webkit-flex;
+  justify-content: space-between;
+  position: relative;
+}
+body .content .static {
+  width: 40%;
+  height: 100%;
+  border-radius: 5px;
+}
+body .content .scrolling {
+top: 100px;
+  width: 58%;
+  height: 500px;
+  border-radius: 5px;
+}
+body .content .scrolling.fixed {
+  position: fixed;
+  right: 10px;
+}
+body .content .scrolling.end {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+/*
+
+body { background-color:#fafafa;}
+.container { margin:150px auto; max-width:600px;}
+body { margin: 0 auto; }
+*/
 
 ul {
   list-style-type: none;
@@ -30,334 +67,600 @@ ul.checktree li { border-left: 1px dashed; }
 ul.checktree li:last-child:before { border-left: 1px dashed; }
 
 ul.checktree li:last-child { border-left: none; }
+
+.tubes { 
+  margin-inline: auto; 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 2rem; 
+  justify-content: center 
+}
+
+.tube {
+    --width: 4rem;
+    --skew: .5rem;
+    --tube-color: #fff;
+    --anim-duration: 2s;
+    width: var(--width);
+    aspect-ratio: 1/4.5;
+    margin-top: var(--skew);
+    border-top-left-radius: 50% var(--skew);
+    border-top-right-radius: 50% var(--skew);
+    border-bottom-left-radius: 50% var(--skew);
+    border-bottom-right-radius: 50% var(--skew);
+    display: grid;
+    grid-template-rows: max-content auto max-content;
+    position: relative;
+}
+.tube::before{
+    --blur: 4px;
+    content: '';
+    position: absolute;
+    width: calc(100% + var(--width) * 0.25);
+    z-index: -1;
+    right: var(--blur);
+    bottom: 0;
+    height: calc(var(--skew) * 2);
+    background: rgb(0 0 0 / .25);
+    border-radius: inherit;
+    filter: blur(var(--blur));
+}
+
+.tube>.cap{
+    --cap-height: calc(var(--width) * .5);
+    height: calc(var(--cap-height) + var(--skew));
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    background-color: var(--tube-color);
+    background-image: linear-gradient(to right, rgb(0 0 0 / .25), transparent 50%);
+    position: relative;
+    z-index: 2;
+}
+.tube>.cap::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(var(--skew) * 2);
+    background-color: var(--tube-color);
+    background-image: linear-gradient(to left, rgb(0 0 0 / .25), transparent);
+    border-radius: 50%;
+    top: calc(var(--skew) * -1);
+}
+
+.tube>.base{
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    background-color: var(--tube-color);
+    background-image: linear-gradient(to right, rgb(0 0 0 / .25), transparent 50%);
+    position: relative;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    padding-top: calc(var(--width) * 0.1 + var(--skew));
+    padding-bottom: calc(var(--width) * .1);
+    overflow: hidden;
+}
+
+.tube>.base>.text{
+    color: var(--fill-color);
+    font-family: sans-serif;
+    line-height: 1;
+    font-size: calc(var(--width) * .4);
+    position: relative;
+}
+.tube>.base>.text > *{
+    position: absolute;
+    font-size: .5em;
+}
+
+.tube>.base>.icon{
+    width: 100%;
+    color: var(--fill-color);
+    background-color: rgb(0 0 0 / .1);
+    padding-top: calc(var(--skew) + var(--width) * .1);
+    padding-bottom: calc(var(--width) * .1);
+    display: grid;
+    place-content: center;
+    margin-top: calc(var(--skew) * -.5);
+    border-bottom-left-radius: 50% var(--skew);
+    border-bottom-right-radius: 50% var(--skew);
+    --mask-image: radial-gradient( ellipse 100% calc(var(--skew) * 2) at center top, transparent calc(50% - 1px), black calc(50% + 1px));
+    -webkit-mask-image: var(--mask-image);
+    mask-image: var(--mask-image);
+    font-size: calc(var(--width) * .25); 
+}
+
+.tube>.fill{
+    margin-top: calc(var(--skew) * -1);
+    position: relative;
+    z-index: 1;
+    --glas-gradient:
+        linear-gradient(
+            to right,
+            rgb(0 0 0 / .25),
+            transparent 10% 15%,
+            rgb(255 255 255 / .5) 20%,
+            transparent 50% 90%,
+            rgb(0 0 0 / .125) 
+        );
+    background-image: var(--glas-gradient);
+}
+
+.tube>.fill::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    --fill-start: var(--skew);
+    --fill-end: calc(var(--percent) * 1% + var(--skew));
+    height: var(--fill-start);
+    background-color: var(--fill-color);
+    bottom: calc(var(--skew) * -1);
+    border-bottom-left-radius: 50% var(--skew);
+    border-bottom-right-radius: 50% var(--skew);
+    background-image: 
+        var(--glas-gradient),
+        radial-gradient(
+            ellipse 100% calc(var(--skew) * 2) at center calc(100% - var(--skew)), 
+            rgb(255 255 255 /.125) calc(50% - 1px), 
+            transparent 50%),
+        linear-gradient(
+            to right, 
+            rgb(0 0 0 / .25), 
+            transparent 50% 70%, 
+            rgb(0 0 0 / .25));
+  animation: fill-before var(--anim-duration) linear forwards
+}
+
+.tube>.fill::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(var(--skew) * 2);
+    background-color: var(--fill-color);
+    border-radius: 50%;
+    --fill-start: calc(var(--skew) * -1);
+    --fill-end: calc(var(--percent) * 1% - var(--skew));
+    bottom: var(--fill-start);
+    background-image: 
+        var(--glas-gradient),
+        linear-gradient(to left, rgb(0 0 0 / .25), transparent 50%);
+  animation: fill-after var(--anim-duration) linear forwards
+}
+
+@keyframes fill-before{ to { height: var(--fill-end)}}
+@keyframes fill-after { to { bottom: var(--fill-end)}}
         </style>
         <link href="https://bootswatch.com/paper/bootstrap.min.css" rel="stylesheet" type="text/css">
 <title>Vahvuudet</title>
 </head>
 	<body>
+	
+	  <div class="scrolling fixed"></div>
+	  
+	  
+<div class="content">
+  <div class="static">
+  
+
 <div id="myDiv">
     <div class="container">
     <h1>Vahvuudet</h1>
 		<ul class="checktree">
 				<li>
-				<input id="administration" type="checkbox" /><label for="administration">Valitse ne kohdat, jotka kuvaavat sinua parhaiten</label>
+				<input id="vahvuudet" type="checkbox" value=0/><label for="vahvuudet">Valitse ne kohdat, jotka kuvaavat sinua parhaiten</label>
 				<ul>
 					<li>
-						<input id="president" type="checkbox" /><label for="president">VIISAUS</label>
+						<input id="viisaus" type="checkbox" value=1/><label for="viisaus" style="color:#e7b409">VIISAUS</label>
 						<ul>
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Luovuus</label>
+								<input id="luovuus" type="checkbox" style="color:#e7b409" value=2/><label for="luovuus" style="color:#e7b409">Luovuus</label>
 								<ul>
-									<li><input id="viisaus1" type="checkbox" value="A1"/>Tuotan monenlaisia ratkaisuja tilanteisiin
-</label></li>
-									<li><input id="viisaus2" type="checkbox" value="A2"/>Ilmaisen itseäni monipuolisesti</label></li>
-									<li><input id="viisaus3" type="checkbox" value="A3"/>Kehitän uusia toimintatapoja</label></li>
-									<li><input id="viisaus4" type="checkbox" value="A4"/>Nautin asioiden ratkaisemisesta</label></li>
-									<li><input id="viisaus5" type="checkbox" value="A5"/>Pidän uusien asioiden kokeilemisesta</label></li>	
+									<li><input id="luovuus1" type="checkbox" value=3/><label for="luovuus1">Tuotan monenlaisia ratkaisuja tilanteisiin</li>
+									<li><input id="luovuus2" type="checkbox" value=4/><label for="luovuus2">Ilmaisen itseäni monipuolisesti</li>
+									<li><input id="luovuus3" type="checkbox" value=5/><label for="luovuus3">Kehitän uusia toimintatapoja</li>
+									<li><input id="luovuus4" type="checkbox" value=6/><label for="luovuus4">Nautin asioiden ratkaisemisesta</li>
+									<li><input id="luovuus5" type="checkbox" value=7/><label for="luovuus5">Pidän uusien asioiden kokeilemisesta</li>	
 								</ul>
 							</li>
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Näkökulmanottokyky</label>
+								<input id="nakokulma" type="checkbox" value=8/><label for="nakokulma" style="color:#e7b409">Näkökulmanottokyky</label>
 								<ul>
-									<li><input id="viisaaus6" type="checkbox" /><label for="viisaus6">Hahmotan helposti kokonaisuuksia</label></li>
-									<li><input id="viisaus7" type="checkbox" /><label for="viisaus7">Ymmärrän asioiden moniulotteisuuden</label></li>
-									<li><input id="viisaus8" type="checkbox" /><label for="viisaus8">Selitän asioita ymmärrettävästi</label></li>
-									<li><input id="viisaus9" type="checkbox" /><label for="viisaus9">Kuuntelen ja annan uutta ajateltavaa</label></li>
-									<li><input id="viisaus10" type="checkbox" /><label for="viisaus10">Pystyn kompromisseihin</label></li>	
+									<li><input id="nakokulma1" type="checkbox" value=9/><label for="nakokulma1">Hahmotan helposti kokonaisuuksia</label></li>
+									<li><input id="nakokulma2" type="checkbox" value=10/><label for="nakokulma2">Ymmärrän asioiden moniulotteisuuden</label></li>
+									<li><input id="nakokulma3" type="checkbox" value=11/><label for="nakokulma3">Selitän asioita ymmärrettävästi</label></li>
+									<li><input id="nakokulma4" type="checkbox" value=12/><label for="nakokulma4">Kuuntelen ja annan uutta ajateltavaa</label></li>
+									<li><input id="nakokulma5" type="checkbox" value=13/><label for="nakokulma5">Pystyn kompromisseihin</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Arviointikyky</label>
+								<input id="arviointi" type="checkbox" value=14/><label for="arviointi" style="color:#e7b409">Arviointikyky</label>
 								<ul>
-									<li><input id="viisaus11" type="checkbox" /><label for="viisaus11">Harkitsen vaihtoehtoja ennen päätöksiä</label></li>
-									<li><input id="viisaus12" type="checkbox" /><label for="viisaus12">Tunnistan mikä on totta ja mikä ei</label></li>
-									<li><input id="viisaus13" type="checkbox" /><label for="viisaus13">Ajattelen mitä sanon</label></li>
-									<li><input id="viisaus14" type="checkbox" /><label for="viisaus14">Näen laajoja kokonaisuuksia</label></li>
-									<li><input id="viisaus15" type="checkbox" /><label for="viisaus15">Olen itsekriittinen</label></li>	
+									<li><input id="arviointi1" type="checkbox" value=15/><label for="arviointi1">Harkitsen vaihtoehtoja ennen päätöksiä</label></li>
+									<li><input id="arviointi2" type="checkbox" value=16/><label for="arviointi2">Tunnistan mikä on totta ja mikä ei</label></li>
+									<li><input id="arviointi3" type="checkbox" value=17/><label for="arviointi3">Ajattelen mitä sanon</label></li>
+									<li><input id="arviointi4" type="checkbox" value=18/><label for="arviointi4">Näen laajoja kokonaisuuksia</label></li>
+									<li><input id="arviointi5" type="checkbox" value=19/><label for="arviointi5">Olen itsekriittinen</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Uteliaisuus</label>
+								<input id="uteliaisuus" type="checkbox" value=20/><label for="uteliaisuus" style="color:#e7b409">Uteliaisuus</label>
 								<ul>
-									<li><input id="viisaus16" type="checkbox" /><label for="viisaus16">Havainnoin tarkoin ympäristöäni</label></li>
-									<li><input id="viisaus17" type="checkbox" /><label for="viisaus17">Kyselen, tutkin ja kokeilen</label></li>
-									<li><input id="viisaus18" type="checkbox" /><label for="viisaus18">Haluan tietää kaikesta kaiken</label></li>
-									<li><input id="viisaus19" type="checkbox" /><label for="viisaus19">Kehitän itseäni syventääkseni ymmärrystäni</label></li>
-									<li><input id="viisaus20" type="checkbox" /><label for="viisaus20">Tutustun ja kuuntelen ihmisten tarinoita</label></li>	
+									<li><input id="uteliaisuus1" type="checkbox" value=21/><label for="uteliaisuus1">Havainnoin tarkoin ympäristöäni</label></li>
+									<li><input id="uteliaisuus2" type="checkbox" value=22/><label for="uteliaisuus2">Kyselen, tutkin ja kokeilen</label></li>
+									<li><input id="uteliaisuus3" type="checkbox" value=23/><label for="uteliaisuus3">Haluan tietää kaikesta kaiken</label></li>
+									<li><input id="uteliaisuus4" type="checkbox" value=24/><label for="uteliaisuus4">Kehitän itseäni syventääkseni ymmärrystäni</label></li>
+									<li><input id="uteliaisuus5" type="checkbox" value=25/><label for="uteliaisuus5">Tutustun ja kuuntelen ihmisten tarinoita</label></li>	
 								</ul>
 							</li>
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Oppimishalu</label>
+								<input id="oppimishalu" type="checkbox" value=26/><label for="oppimishalu" style="color:#e7b409">Oppimishalu</label>
 								<ul>
-									<li><input id="viisaus21" type="checkbox" /><label for="viisaus21">Nautin tietojen ja taitojen oppimisesta</label></li>
-									<li><input id="viisaus22" type="checkbox" /><label for="viisaus22">Etsin innokkaasti uutta tietoa</label></li>
-									<li><input id="viisaus23" type="checkbox" /><label for="viisaus23">Uskon oppimisesta saatavaan hyötyyn</label></li>
-									<li><input id="viisaus24" type="checkbox" /><label for="viisaus24">Löydän uutta tietoa ja kokemuksia</label></li>
-									<li><input id="viisaus25" type="checkbox" /><label for="viisaus25">Omaksun uusia asioita helposti</label></li>	
+									<li><input id="oppimishalu1" type="checkbox" value=27/><label for="oppimishalu1">Nautin tietojen ja taitojen oppimisesta</label></li>
+									<li><input id="oppimishalu2" type="checkbox" value=28/><label for="oppimishalu2">Etsin innokkaasti uutta tietoa</label></li>
+									<li><input id="oppimishalu3" type="checkbox" value=29/><label for="oppimishalu3">Uskon oppimisesta saatavaan hyötyyn</label></li>
+									<li><input id="oppimishalu4" type="checkbox" value=30/><label for="oppimishalu4">Löydän uutta tietoa ja kokemuksia</label></li>
+									<li><input id="oppimishalu5" type="checkbox" value=31/><label for="oppimishalu5">Omaksun uusia asioita helposti</label></li>	
 								</ul>
 							</li>				
 						</ul>
 					</li>	
 					<li>
-						<input id="president" type="checkbox" /><label for="president">ROHKEUS</label>
+						<input id="rohkeus" type="checkbox" value=32/><label for="rohkeus" style="color:#E96413">ROHKEUS</label>
 						<ul>
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Kärsivällisyys</label>
+								<input id="karsivallisyys" type="checkbox" value=33/><label for="karsivallisyys" style="color:#E96413">Kärsivällisyys</label>
 								<ul>
-									<li><input id="rohkeus1" type="checkbox" /><label for="rohkeus1">Siedän turhautumista</label></li>
-									<li><input id="rohkeus2" type="checkbox" /><label for="rohkeus2">Luotan itsehillintääni</label></li>
-									<li><input id="rohkeus3" type="checkbox" /><label for="rohkeus3">Hyväksyn asiat sellaisina kuin ne ovat</label></li>
-									<li><input id="rohkeus4" type="checkbox" /><label for="rohkeus4">Seuraan suuntaa, en aikaa</label></li>
-									<li><input id="rohkeus5" type="checkbox" /><label for="rohkeus5">En murehdi etukäteen</label></li>	
+									<li><input id="karsivallisyys1" type="checkbox" value=34/><label for="karsivallisyys1">Siedän turhautumista</label></li>
+									<li><input id="karsivallisyys2" type="checkbox" value=35/><label for="karsivallisyys2">Luotan itsehillintääni</label></li>
+									<li><input id="karsivallisyys3" type="checkbox" value=36/><label for="karsivallisyys3">Hyväksyn asiat sellaisina kuin ne ovat</label></li>
+									<li><input id="karsivallisyys4" type="checkbox" value=37/><label for="karsivallisyys4">Seuraan suuntaa, en aikaa</label></li>
+									<li><input id="karsivallisyys5" type="checkbox" value=38/><label for="karsivallisyys5">En murehdi etukäteen</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Innokkuus</label>
+								<input id="innokkuus" type="checkbox" value=39/><label for="innokkuus" style="color:#E96413">Innokkuus</label>
 								<ul>
-									<li><input id="rohkeus6" type="checkbox" /><label for="rohkeus6">Ajattelen elämää mahdollisuuksien seikkailuna</label></li>
-									<li><input id="rohkeus7" type="checkbox" /><label for="rohkeus7">Odotan innolla uuttaa päivää</label></li>
-									<li><input id="rohkeus8" type="checkbox" /><label for="rohkeus8">Näen elämässä paljon mahdollisuuksia</label></li>
-									<li><input id="rohkeus9" type="checkbox" /><label for="rohkeus9">Innostan myös muita</label></li>
-									<li><input id="rohkeus10" type="checkbox" /><label for="rohkeus10">Lähestyn tulevaisuutta myönteisesti</label></li>	
+									<li><input id="innokkuus1" type="checkbox" value=40/><label for="innokkuus1">Ajattelen elämää mahdollisuuksien seikkailuna</label></li>
+									<li><input id="innokkuus2" type="checkbox" value=41/><label for="innokkuus2">Odotan innolla uuttaa päivää</label></li>
+									<li><input id="innokkuus3" type="checkbox" value=42/><label for="innokkuus3">Näen elämässä paljon mahdollisuuksia</label></li>
+									<li><input id="innokkuus4" type="checkbox" value=43/><label for="innokkuus4">Innostan myös muita</label></li>
+									<li><input id="innokkuus5" type="checkbox" value=44/><label for="innokkuus5">Lähestyn tulevaisuutta myönteisesti</label></li>	
 								</ul>
 							</li>
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Sinnikkyys</label>
+								<input id="sinnikkyys" type="checkbox" value=45/><label for="sinnikkyys" style="color:#E96413">Sinnikkyys</label>
 								<ul>
-									<li><input id="rohkeus11" type="checkbox" /><label for="rohkeus11">Pysyn päämäärässäni jopa muiden luovuttaessa</label></li>
-									<li><input id="rohkeus12" type="checkbox" /><label for="rohkeus12">Haastavatkaan tilanteet eivät pysäytä minua</label></li>
-									<li><input id="rohkeus13" type="checkbox" /><label for="rohkeus13">Keksin keinoja ylittää vaikeudet ja esteet</label></li>
-									<li><input id="rohkeus14" type="checkbox" /><label for="rohkeus14">Nautin ponnistelusta saavuttaakseni tavoitteeni</label></li>
-									<li><input id="rohkeus15" type="checkbox" /><label for="rohkeus15">Luotan kykyihini myös epäillysten keskellä</label></li>	
+									<li><input id="sinnikkyys1" type="checkbox" value=46/><label for="sinnikkyys1">Pysyn päämäärässäni jopa muiden luovuttaessa</label></li>
+									<li><input id="sinnikkyys2" type="checkbox" value=47/><label for="sinnikkyys2">Haastavatkaan tilanteet eivät pysäytä minua</label></li>
+									<li><input id="sinnikkyys3" type="checkbox" value=48/><label for="sinnikkyys3">Keksin keinoja ylittää vaikeudet ja esteet</label></li>
+									<li><input id="sinnikkyys4" type="checkbox" value=49/><label for="sinnikkyys4">Nautin ponnistelusta saavuttaakseni tavoitteeni</label></li>
+									<li><input id="sinnikkyys5" type="checkbox" value=50/><label for="sinnikkyys5">Luotan kykyihini myös epäillysten keskellä</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Urheus</label>
+								<input id="urheus" type="checkbox" value=51/><label for="urheus" style="color:#E96413">Urheus</label>
 								<ul>
-									<li><input id="rohkeus16" type="checkbox" /><label for="rohkeus16">Uskallan kokeilla uusia asioita ja ottaa riskejä</label></li>
-									<li><input id="rohkeus17" type="checkbox" /><label for="rohkeus17">Avaan suuni myös silloin kun olen eri mieltä</label></li>
-									<li><input id="rohkeus18" type="checkbox" /><label for="rohkeus18">Olen oma itseni muiden mielipiteistä huolimatta</label></li>
-									<li><input id="rohkeus19" type="checkbox" /><label for="rohkeus19">Puolustan urhoollisesti myös muita</label></li>
-									<li><input id="rohkeus20" type="checkbox" /><label for="rohkeus20">Yritän uudelleen epäonnistumisesta huolimatta</label></li>	
+									<li><input id="urheus1" type="checkbox" value=52/><label for="urheus1">Uskallan kokeilla uusia asioita ja ottaa riskejä</label></li>
+									<li><input id="urheus2" type="checkbox" value=53/><label for="urheus2">Avaan suuni myös silloin kun olen eri mieltä</label></li>
+									<li><input id="urheus3" type="checkbox" value=54/><label for="urheus3">Olen oma itseni muiden mielipiteistä huolimatta</label></li>
+									<li><input id="urheus4" type="checkbox" value=55/><label for="urheus4">Puolustan urhoollisesti myös muita</label></li>
+									<li><input id="urheus5" type="checkbox" value=56/><label for="urheus5">Yritän uudelleen epäonnistumisesta huolimatta</label></li>	
+								</ul>
+							</li>
+							<li>
+								<input id="itsevarmuus" type="checkbox" value=57/><label for="itsevarmuus" style="color:#E96413">Itsevarmuus</label>
+								<ul>
+									<li><input id="itsevarmuus1" type="checkbox" value=58/><label for="itsevarmuus1">Uskallan kokeilla uusia asioita ja ottaa riskejä</label></li>
+									<li><input id="itsevarmuus2" type="checkbox" value=59/><label for="itsevarmuus2">Avaan suuni myös silloin kun olen eri mieltä</label></li>
+									<li><input id="itsevarmuus3" type="checkbox" value=60/><label for="itsevarmuus4">Olen oma itseni muiden mielipiteistä huolimatta</label></li>
+									<li><input id="itsevarmuus4" type="checkbox" value=61/><label for="itsevarmuus4">Puolustan urhoollisesti myös muita</label></li>
+									<li><input id="itsevarmuus5" type="checkbox" value=62/><label for="itsevarmuus5">Yritän uudelleen epäonnistumisesta huolimatta</label></li>	
 								</ul>
 							</li>	
 						</ul>
 					</li>
 					<li>
-						<input id="president" type="checkbox" /><label for="president">HENKISYYS</label>
+						<input id="henkisyys" type="checkbox" value=63/><label for="henkisyys">HENKISYYS</label>
 						<ul>
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Kiitollisuus</label>
+								<input id="kiitollisuus" type="checkbox" value=64/><label for="kiitollisuus">Kiitollisuus</label>
 								<ul>
-									<li><input id="rohkeus1" type="checkbox" /><label for="rohkeus1">Mietin usein miten onnekas olen</label></li>
-									<li><input id="rohkeus2" type="checkbox" /><label for="rohkeus2">Iloitsen pienistä asioista</label></li>
-									<li><input id="rohkeus3" type="checkbox" /><label for="rohkeus3">Löydän hyviä asioita myös vastoinkäymisistä</label></li>
-									<li><input id="rohkeus4" type="checkbox" /><label for="rohkeus4">En pidä asioita itsestäänselvyytenä</label></li>
-									<li><input id="rohkeus5" type="checkbox" /><label for="rohkeus5">Ilmaisen kiitollisuuttani toisia kohtaan</label></li>	
+									<li><input id="kiitollisuus1" type="checkbox" value=65/><label for="kiitollisuus1">Mietin usein miten onnekas olen</label></li>
+									<li><input id="kiitollisuus2" type="checkbox" value=66/><label for="kiitollisuus2">Iloitsen pienistä asioista</label></li>
+									<li><input id="kiitollisuus3" type="checkbox" value=67/><label for="kiitollisuus3">Löydän hyviä asioita myös vastoinkäymisistä</label></li>
+									<li><input id="kiitollisuus4" type="checkbox" value=68/><label for="kiitollisuus4">En pidä asioita itsestäänselvyytenä</label></li>
+									<li><input id="kiitollisuus5" type="checkbox" value=69/><label for="kiitollisuus5">Ilmaisen kiitollisuuttani toisia kohtaan</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Toiveikkuus</label>
+								<input id="toiveikkuus" type="checkbox" value=70/><label for="toiveikkuus">Toiveikkuus</label>
 								<ul>
-									<li><input id="rohkeus6" type="checkbox" /><label for="rohkeus6">Näen aina asioiden hyvät puolet</label></li>
-									<li><input id="rohkeus7" type="checkbox" /><label for="rohkeus7">Suhtaudun optimistisesti ongelmien voittamiseksi</label></li>
-									<li><input id="rohkeus8" type="checkbox" /><label for="rohkeus8">Odotan hyvien asioiden tapahtuvan tulevaisuudessa</label></li>
-									<li><input id="rohkeus9" type="checkbox" /><label for="rohkeus9">Uskon saavuttavani asettamani tavoitteet</label></li>
-									<li><input id="rohkeus10" type="checkbox" /><label for="rohkeus10">Valan toivoa myös muihin ihmisiin</label></li>	
+									<li><input id="toiveikkuus1" type="checkbox" value=71/><label for="toiveikkuus1">Näen aina asioiden hyvät puolet</label></li>
+									<li><input id="toiveikkuus2" type="checkbox" value=72/><label for="toiveikkuus2">Suhtaudun optimistisesti ongelmien voittamiseksi</label></li>
+									<li><input id="toiveikkuus3" type="checkbox" value=73/><label for="toiveikkuus3">Odotan hyvien asioiden tapahtuvan tulevaisuudessa</label></li>
+									<li><input id="toiveikkuus4" type="checkbox" value=74/><label for="toiveikkuus4">Uskon saavuttavani asettamani tavoitteet</label></li>
+									<li><input id="toiveikkuus5" type="checkbox" value=75/><label for="toiveikkuus5">Valan toivoa myös muihin ihmisiin</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Hengellisyys</label>
+								<input id="hengellisyys" type="checkbox" value=76/><label for="hengellisyys">Hengellisyys</label>
 								<ul>
-									<li><input id="rohkeus11" type="checkbox" /><label for="rohkeus11">Uskon olevani osa suurempaa suunnitelmaa</label></li>
-									<li><input id="rohkeus12" type="checkbox" /><label for="rohkeus12">Mielestäni tapahtumilla on tarkoitus ja merkitys</label></li>
-									<li><input id="rohkeus13" type="checkbox" /><label for="rohkeus13">Saan turvaa ja voimaa hengellisyydestä vastoinkäymisissä</label></li>
-									<li><input id="rohkeus14" type="checkbox" /><label for="rohkeus14">Vakuutun mihin uskon ja mitkä asiat ohjaavat elämääni</label></li>
-									<li><input id="rohkeus15" type="checkbox" /><label for="rohkeus15">Uskoni ei horju kovinakaan aikoina</label></li>	
+									<li><input id="hengellisyys1" type="checkbox" value=77/><label for="hengellisyys1">Uskon olevani osa suurempaa suunnitelmaa</label></li>
+									<li><input id="hengellisyys2" type="checkbox" value=78/><label for="hengellisyys2">Mielestäni tapahtumilla on tarkoitus ja merkitys</label></li>
+									<li><input id="hengellisyys3" type="checkbox" value=79/><label for="hengellisyys3">Saan turvaa ja voimaa hengellisyydestä vastoinkäymisissä</label></li>
+									<li><input id="hengellisyys4" type="checkbox" value=80/><label for="hengellisyys4">Vakuutun mihin uskon ja mitkä asiat ohjaavat elämääni</label></li>
+									<li><input id="hengellisyys5" type="checkbox" value=81/><label for="hengellisyys5">Uskoni ei horju kovinakaan aikoina</label></li>	
 								</ul>
 							</li> 	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Täydellisyys</label>
+								<input id="taydellisyys" type="checkbox" value=82/><label for="taydellisyys">Täydellisyys</label>
 								<ul>
-									<li><input id="rohkeus16" type="checkbox" /><label for="rohkeus16">Huomaan kauniit asiat, ihmisten taidot ja lahjakkuudet</label></li>
-									<li><input id="rohkeus17" type="checkbox" /><label for="rohkeus17">Näen kauneutta kaikkialla arjessa</label></li>
-									<li><input id="rohkeus18" type="checkbox" /><label for="rohkeus18">Mielestäni kauneutta on luonnossa, tieteessä ja taiteessa</label></li>
-									<li><input id="rohkeus19" type="checkbox" /><label for="rohkeus19">Ihailen osaamista kaikissa sen muodoissa</label></li>
-									<li><input id="rohkeus20" type="checkbox" /><label for="rohkeus20">Yritän tehdä hienon suorituksen kaikessa mitä teen</label></li>	
+									<li><input id="taydellisyys1" type="checkbox" value=83/><label for="taydellisyys1">Huomaan kauniit asiat, ihmisten taidot ja lahjakkuudet</label></li>
+									<li><input id="taydellisyys2" type="checkbox" value=84/><label for="taydellisyys2">Näen kauneutta kaikkialla arjessa</label></li>
+									<li><input id="taydellisyys3" type="checkbox" value=85/><label for="taydellisyys3">Mielestäni kauneutta on luonnossa, tieteessä ja taiteessa</label></li>
+									<li><input id="taydellisyys4" type="checkbox" value=86/><label for="taydellisyys4">Ihailen osaamista kaikissa sen muodoissa</label></li>
+									<li><input id="taydellisyys5" type="checkbox" value=87/><label for="taydellisyys5">Yritän tehdä hienon suorituksen kaikessa mitä teen</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Huumorintaju</label>
+								<input id="huuomrintaju" type="checkbox" value=88/><label for="huuomrintaju">Huumorintaju</label>
 								<ul>
-									<li><input id="rohkeus16" type="checkbox" /><label for="rohkeus16">Arvostan huumoria ja komiikkaa</label></li>
-									<li><input id="rohkeus17" type="checkbox" /><label for="rohkeus17">Nauraminen ja vitsailu tulee minulta luonnostaan</label></li>
-									<li><input id="rohkeus18" type="checkbox" /><label for="rohkeus18">Haluan naurattaa muita</label></li>
-									<li><input id="rohkeus19" type="checkbox" /><label for="rohkeus19">Kevennnän synkintäkin hetkeä myönteisellä huumorilla</label></li>
-									<li><input id="rohkeus20" type="checkbox" /><label for="rohkeus20">Pystyn nauramaan myös itselleni	</label></li>	
+									<li><input id="huuomrintaju1" type="checkbox" value=89/><label for="huuomrintaju1">Arvostan huumoria ja komiikkaa</label></li>
+									<li><input id="huuomrintaju2" type="checkbox" value=90/><label for="huuomrintaju2">Nauraminen ja vitsailu tulee minulta luonnostaan</label></li>
+									<li><input id="huuomrintaju3" type="checkbox" value=91/><label for="huuomrintaju3">Haluan naurattaa muita</label></li>
+									<li><input id="huuomrintaju4" type="checkbox" value=92/><label for="huuomrintaju4">Kevennnän synkintäkin hetkeä myönteisellä huumorilla</label></li>
+									<li><input id="huuomrintaju5" type="checkbox" value=93/><label for="huuomrintaju5">Pystyn nauramaan myös itselleni	</label></li>	
 								</ul>
 							</li>		
 						</ul>
 					</li>
 		     		<li>
-						<input id="president" type="checkbox" /><label for="president">REILUUS</label>
+						<input id="reiluus" type="checkbox" value=94/><label for="reiluus">REILUUS</label>
 						<ul>
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Rehellisyys</label>
+								<input id="rehellisyys" type="checkbox" value=95/><label for="rehellisyys">Rehellisyys</label>
 								<ul>
-									<li><input id="rohkeus1" type="checkbox" /><label for="rohkeus1">Puhun totta oikeudentuntoni takia</label></li>
-									<li><input id="rohkeus2" type="checkbox" /><label for="rohkeus2">Puolustan totuutta</label></li>
-									<li><input id="rohkeus3" type="checkbox" /><label for="rohkeus3">Vältän kaunistelemasta asioita</label></li>
-									<li><input id="rohkeus4" type="checkbox" /><label for="rohkeus4">Esitän aidosti itseäni ilman roolia</label></li>
-									<li><input id="rohkeus5" type="checkbox" /><label for="rohkeus5">Olen rehellinen myös itselleni</label></li>	
+									<li><input id="rehellisyys1" type="checkbox" value=96/><label for="rehellisyys1">Puhun totta oikeudentuntoni takia</label></li>
+									<li><input id="rehellisyys2" type="checkbox" value=97/><label for="rehellisyys2">Puolustan totuutta</label></li>
+									<li><input id="rehellisyys3" type="checkbox" value=98/><label for="rehellisyys3">Vältän kaunistelemasta asioita</label></li>
+									<li><input id="rehellisyys4" type="checkbox" value=99/><label for="rehellisyys4">Esitän aidosti itseäni ilman roolia</label></li>
+									<li><input id="rehellisyys5" type="checkbox" value=100/><label for="rehellisyys5">Olen rehellinen myös itselleni</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Tasapuolisuus</label>
+								<input id="tasapuolisuus" type="checkbox" value=101/><label for="tasapuolisuus">Tasapuolisuus</label>
 								<ul>
-									<li><input id="rohkeus1" type="checkbox" /><label for="rohkeus1">Ajattelen että kaikki ihmiset ovat yhtä tärkeitä</label></li>
-									<li><input id="rohkeus2" type="checkbox" /><label for="rohkeus2">Kohtelen kaikkia tasapuolisesti</label></li>
-									<li><input id="rohkeus3" type="checkbox" /><label for="rohkeus3">Pidän huolta että oikeus toteutuu</label></li>
-									<li><input id="rohkeus4" type="checkbox" /><label for="rohkeus4">Puolustan heikompia</label></li>
-									<li><input id="rohkeus5" type="checkbox" /><label for="rohkeus5">Joustan tarvittaessa</label></li>	
+									<li><input id="tasapuolisuus1" type="checkbox" value=102/><label for="tasapuolisuus1">Ajattelen että kaikki ihmiset ovat yhtä tärkeitä</label></li>
+									<li><input id="tasapuolisuus2" type="checkbox" value=103/><label for="tasapuolisuus2">Kohtelen kaikkia tasapuolisesti</label></li>
+									<li><input id="tasapuolisuus3" type="checkbox" value=104/><label for="tasapuolisuus3">Pidän huolta että oikeus toteutuu</label></li>
+									<li><input id="tasapuolisuus4" type="checkbox" value=105/><label for="tasapuolisuus4">Puolustan heikompia</label></li>
+									<li><input id="tasapuolisuus5" type="checkbox" value=106/><label for="tasapuolisuus5">Joustan tarvittaessa</label></li>	
 								</ul>
 							</li>
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Ryhmätyötaidot</label>
+								<input id="ryhmatyo" type="checkbox" value=107/><label for="ryhmatyo">Ryhmätyötaidot</label>
 								<ul>
-									<li><input id="rohkeus6" type="checkbox" /><label for="rohkeus6">Tunnistan omat ja toisten vahvuudet</label></li>
-									<li><input id="rohkeus7" type="checkbox" /><label for="rohkeus7">Laitan yhteisen hyvän omien intressien edelle</label></li>
-									<li><input id="rohkeus8" type="checkbox" /><label for="rohkeus8">Työskentelen mieluummin porukassa kuin yksin</label></li>
-									<li><input id="rohkeus9" type="checkbox" /><label for="rohkeus9">Iloisten myös toisten onnistumisesta</label></li>
-									<li><input id="rohkeus10" type="checkbox" /><label for="rohkeus10">Tiedän kuinka yhteinen päämäärä saavutetaan parhaiten</label></li>	
+									<li><input id="ryhmatyo1" type="checkbox" value=108/><label for="ryhmatyo1">Tunnistan omat ja toisten vahvuudet</label></li>
+									<li><input id="ryhmatyo2" type="checkbox" value=109/><label for="ryhmatyo2">Laitan yhteisen hyvän omien intressien edelle</label></li>
+									<li><input id="ryhmatyo3" type="checkbox" value=110/><label for="ryhmatyo3">Työskentelen mieluummin porukassa kuin yksin</label></li>
+									<li><input id="ryhmatyo4" type="checkbox" value=111/><label for="ryhmatyo4">Iloisten myös toisten onnistumisesta</label></li>
+									<li><input id="ryhmatyo5" type="checkbox" value=112/><label for="ryhmatyo5">Tiedän kuinka yhteinen päämäärä saavutetaan parhaiten</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Johtajuus</label>
+								<input id="johtajuus" type="checkbox" value=113/><label for="johtajuus">Johtajuus</label>
 								<ul>
-									<li><input id="rohkeus11" type="checkbox" /><label for="rohkeus11">Otan mielelläni vastuuta ja vedän ryhmän toimintaa</label></li>
-									<li><input id="rohkeus12" type="checkbox" /><label for="rohkeus12">Kannustan ja innostan muita ihmisiä</label></li>
-									<li><input id="rohkeus13" type="checkbox" /><label for="rohkeus13">Esitän ajatuksiani ja ideoitani mielelläni julkisesti</label></li>
-									<li><input id="rohkeus14" type="checkbox" /><label for="rohkeus14">Tunnistan muiden vahvuuksia ja kutsun niitä esiin</label></li>
-									<li><input id="rohkeus15" type="checkbox" /><label for="rohkeus15">Jaan kunnian mielelläni kaikkien osallistujien kesken</label></li>	
+									<li><input id="johtajuus1" type="checkbox" value=114/><label for="johtajuus1">Otan mielelläni vastuuta ja vedän ryhmän toimintaa</label></li>
+									<li><input id="johtajuus2" type="checkbox" value=115/><label for="johtajuus2">Kannustan ja innostan muita ihmisiä</label></li>
+									<li><input id="johtajuus3" type="checkbox" value=116/><label for="johtajuus3">Esitän ajatuksiani ja ideoitani mielelläni julkisesti</label></li>
+									<li><input id="johtajuus4" type="checkbox" value=117/><label for="johtajuus4">Tunnistan muiden vahvuuksia ja kutsun niitä esiin</label></li>
+									<li><input id="johtajuus5" type="checkbox" value=118/><label for="johtajuus5">Jaan kunnian mielelläni kaikkien osallistujien kesken</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Vastuuntunto</label>
+								<input id="vastuuntunto" type="checkbox" value=119/><label for="vastuuntunto">Vastuuntunto</label>
 								<ul>
-									<li><input id="rohkeus16" type="checkbox" /><label for="rohkeus16">Olen kärsivällinen ja vastuuntuntoinen</label></li>
-									<li><input id="rohkeus17" type="checkbox" /><label for="rohkeus17">Olen hyvä valvomaan tavoitteiden toteutumista</label></li>
-									<li><input id="rohkeus18" type="checkbox" /><label for="rohkeus18">Huomioin ihmisten tarpeet ja näen vaivaa ollakseni avuksi</label></li>
-									<li><input id="rohkeus19" type="checkbox" /><label for="rohkeus19">Muistan ihmiset tarkasti</label></li>
-									<li><input id="rohkeus20" type="checkbox" /><label for="rohkeus20">Hyödynnän tietojani ja muistikuviani taitavasti</label></li>	
+									<li><input id="vastuuntunto1" type="checkbox" value=120/><label for="vastuuntunto1">Olen kärsivällinen ja vastuuntuntoinen</label></li>
+									<li><input id="vastuuntunto2" type="checkbox" value=121/><label for="vastuuntunto2">Olen hyvä valvomaan tavoitteiden toteutumista</label></li>
+									<li><input id="vastuuntunto3" type="checkbox" value=122/><label for="vastuuntunto3">Huomioin ihmisten tarpeet ja näen vaivaa ollakseni avuksi</label></li>
+									<li><input id="vastuuntunto4" type="checkbox" value=123/><label for="vastuuntunto4">Muistan ihmiset tarkasti</label></li>
+									<li><input id="vastuuntunto5" type="checkbox" value=124/><label for="vastuuntunto5">Hyödynnän tietojani ja muistikuviani taitavasti</label></li>	
 								</ul>
 							</li> 	
 						</ul>
 					</li>
 		     		<li>
-						<input id="president" type="checkbox" /><label for="president">MALTILLISUUS</label>
+						<input id="maltillisuus" type="checkbox" value=125/><label for="president">MALTILLISUUS</label>
 						<ul>
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Anteeksiantavuus</label>
+								<input id="anteeksianto" type="checkbox" value=126/><label for="anteeksianto">Anteeksiantavuus</label>
 								<ul>
-									<li><input id="rohkeus1" type="checkbox" /><label for="rohkeus1">Ymmärrän ihmisten keskeneräisyyden</label></li>
-									<li><input id="rohkeus2" type="checkbox" /><label for="rohkeus2">Annan helposti anteeksi ja olen armollinen</label></li>
-									<li><input id="rohkeus3" type="checkbox" /><label for="rohkeus3">Uskon, että ihmisille tulee antaa toinen mahdollisuus</label></li>
-									<li><input id="rohkeus4" type="checkbox" /><label for="rohkeus4">En janoa kostoa tai hyvitystä</label></li>
-									<li><input id="rohkeus5" type="checkbox" /><label for="rohkeus5">Otan usein ensimmäisen askeleen kohti sovintoa</label></li>	
+									<li><input id="anteeksianto1" type="checkbox" value=127/><label for="anteeksianto1">Ymmärrän ihmisten keskeneräisyyden</label></li>
+									<li><input id="anteeksianto2" type="checkbox" value=128/><label for="anteeksianto2">Annan helposti anteeksi ja olen armollinen</label></li>
+									<li><input id="anteeksianto3" type="checkbox" value=129/><label for="anteeksianto3">Uskon, että ihmisille tulee antaa toinen mahdollisuus</label></li>
+									<li><input id="anteeksianto4" type="checkbox" value=130/><label for="anteeksianto4">En janoa kostoa tai hyvitystä</label></li>
+									<li><input id="anteeksianto5" type="checkbox" value=131/><label for="anteeksianto5">Otan usein ensimmäisen askeleen kohti sovintoa</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Harkitsevuus</label>
+								<input id="harkitsevuus" type="checkbox" value=132/><label for="harkitsevuus">Harkitsevuus</label>
 								<ul>
-									<li><input id="rohkeus6" type="checkbox" /><label for="rohkeus6">Pysähdyn ajattelemaan ennen kuin toimin</label></li>
-									<li><input id="rohkeus7" type="checkbox" /><label for="rohkeus7">Mietin asioita yksityiskohtia myöten</label></li>
-									<li><input id="rohkeus8" type="checkbox" /><label for="rohkeus8">Pohdin etukäteen tapahtumien riskit ja mahdollisuudet</label></li>
-									<li><input id="rohkeus9" type="checkbox" /><label for="rohkeus9">Punnitsen eri vaihtoehtoja</label></li>
-									<li><input id="rohkeus10" type="checkbox" /><label for="rohkeus10">Kysyn tarvittaessa neuvoa ratkaisuni tueksi</label></li>	
+									<li><input id="harkitsevuus1" type="checkbox" value=133/><label for="harkitsevuus1">Pysähdyn ajattelemaan ennen kuin toimin</label></li>
+									<li><input id="harkitsevuus2" type="checkbox" value=134/><label for="harkitsevuus2">Mietin asioita yksityiskohtia myöten</label></li>
+									<li><input id="harkitsevuus3" type="checkbox" value=135/><label for="harkitsevuus3">Pohdin etukäteen tapahtumien riskit ja mahdollisuudet</label></li>
+									<li><input id="harkitsevuus4" type="checkbox" value=136/><label for="harkitsevuus4">Punnitsen eri vaihtoehtoja</label></li>
+									<li><input id="harkitsevuus5" type="checkbox" value=137/><label for="harkitsevuus5">Kysyn tarvittaessa neuvoa ratkaisuni tueksi</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Nöyryys</label>
+								<input id="noyryys" type="checkbox" value=138/><label for="noyryys">Nöyryys</label>
 								<ul>
-									<li><input id="rohkeus11" type="checkbox" /><label for="rohkeus11">Annan tekojen puhua puolestaan</label></li>
-									<li><input id="rohkeus12" type="checkbox" /><label for="rohkeus12">Osaan olla kiitollinen menestyksestäni</label></li>
-									<li><input id="rohkeus13" type="checkbox" /><label for="rohkeus13">En nosta itseäni muiden yläpuolelle</label></li>
-									<li><input id="rohkeus14" type="checkbox" /><label for="rohkeus14">Pidän yhdessä tekemistä tärkeänä</label></li>
-									<li><input id="rohkeus15" type="checkbox" /><label for="rohkeus15">Nostan muiden osaamisia ja taitoja esiin</label></li>	
+									<li><input id="noyryys1" type="checkbox" value=139/><label for="noyryys1">Annan tekojen puhua puolestaan</label></li>
+									<li><input id="noyryys2" type="checkbox" value=140/><label for="noyryys2">Osaan olla kiitollinen menestyksestäni</label></li>
+									<li><input id="noyryys3" type="checkbox" value=141/><label for="noyryys3">En nosta itseäni muiden yläpuolelle</label></li>
+									<li><input id="noyryys4" type="checkbox" value=142/><label for="noyryys4">Pidän yhdessä tekemistä tärkeänä</label></li>
+									<li><input id="noyryys5" type="checkbox" value=143/><label for="noyryys5">Nostan muiden osaamisia ja taitoja esiin</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Itsehallinta</label>
+								<input id="itsehallinta" type="checkbox" value=144/><label for="itsehallinta">Itsehallinta</label>
 								<ul>
-									<li><input id="rohkeus16" type="checkbox" /><label for="rohkeus16">Hallitsen tunteeni, enkä hermostu pienistä</label></li>
-									<li><input id="rohkeus17" type="checkbox" /><label for="rohkeus17">Kykenen selviytymään myös vaikeista tunteista</label></li>
-									<li><input id="rohkeus18" type="checkbox" /><label for="rohkeus18">Keskityn toimintaan, enkä häiriinny helposti</label></li>
-									<li><input id="rohkeus19" type="checkbox" /><label for="rohkeus19">Pysyn suunnitelmissani ja pidän kiinni sovituista asioista</label></li>
-									<li><input id="rohkeus20" type="checkbox" /><label for="rohkeus20">Kykenen vastustamaan mielitekoja ja lykkäämään nautintoja</label></li>	
+									<li><input id="itsehallinta1" type="checkbox" value=145/><label for="itsehallinta1">Hallitsen tunteeni, enkä hermostu pienistä</label></li>
+									<li><input id="itsehallinta2" type="checkbox" value=146/><label for="itsehallinta2">Kykenen selviytymään myös vaikeista tunteista</label></li>
+									<li><input id="itsehallinta3" type="checkbox" value=147/><label for="itsehallinta3">Keskityn toimintaan, enkä häiriinny helposti</label></li>
+									<li><input id="itsehallinta4" type="checkbox" value=148/><label for="itsehallinta4">Pysyn suunnitelmissani ja pidän kiinni sovituista asioista</label></li>
+									<li><input id="itsehallinta5" type="checkbox" value=149/><label for="itsehallinta5">Kykenen vastustamaan mielitekoja ja lykkäämään nautintoja</label></li>	
 								</ul>
 							</li>
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Armollisuus</label>
+								<input id="armollisuus" type="checkbox" value=150/><label for="armollisuus">Armollisuus</label>
 								<ul>
-									<li><input id="rohkeus16" type="checkbox" /><label for="rohkeus16">Tunnnen myötätuntoa myös itseäni kohtaan</label></li>
-									<li><input id="rohkeus17" type="checkbox" /><label for="rohkeus17">Olen armollinen itselleni ja siedän epätäydellisyyttäni</label></li>
-									<li><input id="rohkeus18" type="checkbox" /><label for="rohkeus18">Annan anteeksi itselleni</label></li>
-									<li><input id="rohkeus19" type="checkbox" /><label for="rohkeus19">Vapaudun häpeän kahleista</label></li>
-									<li><input id="rohkeus20" type="checkbox" /><label for="rohkeus20">Tunnistan herkkyyden itsessäni</label></li>	
+									<li><input id="armollisuus1" type="checkbox" value=151/><label for="armollisuus1">Tunnnen myötätuntoa myös itseäni kohtaan</label></li>
+									<li><input id="armollisuus2" type="checkbox" value=152/><label for="armollisuus2">Olen armollinen itselleni ja siedän epätäydellisyyttäni</label></li>
+									<li><input id="armollisuus3" type="checkbox" value=153/><label for="armollisuus3">Annan anteeksi itselleni</label></li>
+									<li><input id="armollisuus4" type="checkbox" value=154/><label for="armollisuus4">Vapaudun häpeän kahleista</label></li>
+									<li><input id="armollisuus5" type="checkbox" value=155/><label for="armollisuus5">Tunnistan herkkyyden itsessäni</label></li>	
 								</ul>
 							</li>	
 						</ul>
 					</li>
 		     		<li>
-						<input id="president" type="checkbox" /><label for="president">INHIMILLISYYS</label>
+						<input id="inhimillisyys" type="checkbox" value=156/><label for="inhimillisyys">INHIMILLISYYS</label>
 						<ul>
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Ystävällisyys</label>
+								<input id="ystavallisyys" type="checkbox" value=157/><label for="ystavallisyys">Ystävällisyys</label>
 								<ul>
-									<li><input id="rohkeus1" type="checkbox" /><label for="rohkeus1">Autan toisia odottamatta vastapalvelusta</label></li>
-									<li><input id="rohkeus2" type="checkbox" /><label for="rohkeus2">Haluan olla hyvä toisia kohtaan</label></li>
-									<li><input id="rohkeus3" type="checkbox" /><label for="rohkeus3">Olen mukana ihmisten hyvissä ja huonoissa hetkissä</label></li>
-									<li><input id="rohkeus4" type="checkbox" /><label for="rohkeus4">Harkitsen sanojani ja tekojani loukkaamatta toisia</label></li>
-									<li><input id="rohkeus5" type="checkbox" /><label for="rohkeus5">Teen ystävällisiä tekoja usein</label></li>	
+									<li><input id="ystavallisyys1" type="checkbox" value=158/><label for="ystavallisyys1">Autan toisia odottamatta vastapalvelusta</label></li>
+									<li><input id="ystavallisyys2" type="checkbox" value=159/><label for="ystavallisyys2">Haluan olla hyvä toisia kohtaan</label></li>
+									<li><input id="ystavallisyys3" type="checkbox" value=160/><label for="ystavallisyys3">Olen mukana ihmisten hyvissä ja huonoissa hetkissä</label></li>
+									<li><input id="ystavallisyys4" type="checkbox" value=161/><label for="ystavallisyys4">Harkitsen sanojani ja tekojani loukkaamatta toisia</label></li>
+									<li><input id="ystavallisyys5" type="checkbox" value=162/><label for="ystavallisyys5">Teen ystävällisiä tekoja usein</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Rakkaus</label>
+								<input id="rakkaus" type="checkbox" value=163/><label for="rakkaus">Rakkaus</label>
 								<ul>
-									<li><input id="rohkeus6" type="checkbox" /><label for="rohkeus6">Arvostan läheisiä ihmissuhteita</label></li>
-									<li><input id="rohkeus7" type="checkbox" /><label for="rohkeus7">Osoitan myönteisiä tunteita toisia kohtaan</label></li>
-									<li><input id="rohkeus8" type="checkbox" /><label for="rohkeus8">Vietän paljon aikaa läheisten ihmisten kanssa</label></li>
-									<li><input id="rohkeus9" type="checkbox" /><label for="rohkeus9">Teen asioita toisten puolesta</label></li>
-									<li><input id="rohkeus10" type="checkbox" /><label for="rohkeus10">Saan energiaa muiden ihmisten seurasta</label></li>	
+									<li><input id="rakkaus1" type="checkbox" value=164/><label for="rakkaus1">Arvostan läheisiä ihmissuhteita</label></li>
+									<li><input id="rakkaus2" type="checkbox" value=165/><label for="rakkaus2">Osoitan myönteisiä tunteita toisia kohtaan</label></li>
+									<li><input id="rakkaus3" type="checkbox" value=166/><label for="rakkaus3">Vietän paljon aikaa läheisten ihmisten kanssa</label></li>
+									<li><input id="rakkaus4" type="checkbox" value=167/><label for="rakkaus4">Teen asioita toisten puolesta</label></li>
+									<li><input id="rakkaus5" type="checkbox" value=168/><label for="rakkaus5">Saan energiaa muiden ihmisten seurasta</label></li>	
 								</ul>
 							</li>	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Sosiaalisuus</label>
+								<input id="sosiaalisuus" type="checkbox" value=169/><label for="sosiaalisuus">Sosiaalisuus</label>
 								<ul>
-									<li><input id="rohkeus11" type="checkbox" /><label for="rohkeus11">Ymmärrän toisten tunteita, ajatuksia ja käyttäytymistä</label></li>
-									<li><input id="rohkeus12" type="checkbox" /><label for="rohkeus12">Tunnen itseni, tunteeni ja ajatukseni</label></li>
-									<li><input id="rohkeus13" type="checkbox" /><label for="rohkeus13">Saan helposti ystäviä</label></li>
-									<li><input id="rohkeus14" type="checkbox" /><label for="rohkeus14">Olen helposti lähestyttävä</label></li>
-									<li><input id="rohkeus15" type="checkbox" /><label for="rohkeus15">Osaan luoda viihtyisän tunnelman</label></li>	
+									<li><input id="sosiaalisuus1" type="checkbox" value=170/><label for="sosiaalisuus1">Ymmärrän toisten tunteita, ajatuksia ja käyttäytymistä</label></li>
+									<li><input id="sosiaalisuus2" type="checkbox" value=171/><label for="sosiaalisuus2">Tunnen itseni, tunteeni ja ajatukseni</label></li>
+									<li><input id="sosiaalisuus3" type="checkbox" value=172/><label for="sosiaalisuus3">Saan helposti ystäviä</label></li>
+									<li><input id="sosiaalisuus4" type="checkbox" value=173/><label for="sosiaalisuus4">Olen helposti lähestyttävä</label></li>
+									<li><input id="sosiaalisuus5" type="checkbox" value=174/><label for="sosiaalisuus5">Osaan luoda viihtyisän tunnelman</label></li>	
 								</ul>
 							</li> 	
 							<li>
-								<input id="manager1" type="checkbox" /><label for="manager1">Myötätunto</label>
+								<input id="myotatunto" type="checkbox" value=175/><label for="myotatunto">Myötätunto</label>
 								<ul>
-									<li><input id="rohkeus16" type="checkbox" /><label for="rohkeus16">Asetun toisten ihmisten asemaan</label></li>
-									<li><input id="rohkeus17" type="checkbox" /><label for="rohkeus17">Kuuntelen ja annan aikaani toisille</label></li>
-									<li><input id="rohkeus18" type="checkbox" /><label for="rohkeus18">Havaitsen toisten tunnetiloja ja elän niissä mukana</label></li>
-									<li><input id="rohkeus19" type="checkbox" /><label for="rohkeus19">Haluan auttaa myös tuntemattomia ihmisiä</label></li>
-									<li><input id="rohkeus20" type="checkbox" /><label for="rohkeus20">Tarjoan usein apuani</label></li>	
+									<li><input id="myotatunto1" type="checkbox" value=176/><label for="myotatunto1">Asetun toisten ihmisten asemaan</label></li>
+									<li><input id="myotatunto2" type="checkbox" value=177/><label for="myotatunto2">Kuuntelen ja annan aikaani toisille</label></li>
+									<li><input id="myotatunto3" type="checkbox" value=178/><label for="myotatunto3">Havaitsen toisten tunnetiloja ja elän niissä mukana</label></li>
+									<li><input id="myotatunto4" type="checkbox" value=179/><label for="myotatunto4">Haluan auttaa myös tuntemattomia ihmisiä</label></li>
+									<li><input id="myotatunto5" type="checkbox" value=180/><label for="myotatunto5">Tarjoan usein apuani</label></li>	
 								</ul>
 							</li> 	
+							<li>
+								<input id="uskollisuus" type="checkbox" value=181/><label for="uskollisuus">Uskollisuus</label>
+								<ul>
+									<li><input id="uskollisuus1" type="checkbox" value=182/><label for="uskollisuus1">Asetun toisten ihmisten asemaan</label></li>
+									<li><input id="uskollisuus2" type="checkbox" value=183/><label for="uskollisuus2">Kuuntelen ja annan aikaani toisille</label></li>
+									<li><input id="uskollisuus3" type="checkbox" value=184/><label for="uskollisuus3">Havaitsen toisten tunnetiloja ja elän niissä mukana</label></li>
+									<li><input id="uskollisuus4" type="checkbox" value=185/><label for="uskollisuus4">Haluan auttaa myös tuntemattomia ihmisiä</label></li>
+									<li><input id="uskollisuus5" type="checkbox" value=186/><label for="uskollisuus5">Tarjoan usein apuani</label></li>	
+								</ul>
+							</li> 		
 						</ul>
 					</li>		
 				</ul>
 			</li>
 		</ul>
         </div>
+
+</div>	
+  </div>
+  <div class="scrolling fixed">
+  
+  <div class="tubes">
+  
+    <div id="t1" class="tube" style="--percent: 10; --fill-color: #e7b409 ">
+        <i class="cap"></i><i class="fill"></i>
+        <div class="base">
+            <div class="text">10<sup>%</sup></div>
+            <div class="icon"><i class="fa-duotone fa-chart-pie-simple"></i></div>
+        </div>
+    </div>
+  
+    <div class="tube" style="--percent: 25; --fill-color: #E96413">
+        <i class="cap"></i><i class="fill"></i>
+        <div class="base">
+            <div class="text">25<sup>%</sup></div>
+            <div class="icon"><i class="fa-duotone fa-chart-bar"></i></div>
+        </div>
+    </div>
+  
+    <div class="tube" style="--percent: 20; --fill-color: #ec1241">
+        <i class="cap"></i><i class="fill"></i>
+        <div class="base">
+            <div class="text">20<sup>%</sup></div>
+            <div class="icon"><i class="fa-duotone fa-chart-scatter-3d"></i></div>
+        </div>
+    </div>
+  
+    <div class="tube" style="--percent: 20; --fill-color: #af1b76">
+        <i class="cap"></i><i class="fill"></i>
+        <div class="base">
+            <div class="text">20<sup>%</sup></div>
+            <div class="icon"><i class="fa-duotone fa-chart-pyramid"></i></div>
+        </div>
+    </div>
+  
+    <div class="tube" style="--percent: 5; --fill-color: #a541ac">
+        <i class="cap"></i><i class="fill"></i>
+        <div class="base">
+            <div class="text">5<sup>%</sup></div>
+            <div class="icon"><i class="fa-duotone fa-chart-area"></i></div>
+        </div>
+    </div>
+    
+    <div class="tube" style="--percent: 30; --fill-color: #16ecac">
+        <i class="cap"></i><i class="fill"></i>
+        <div class="base">
+            <div class="text">30<sup>%</sup></div>
+            <div class="icon"><i class="fa-duotone fa-badger-honey"></i></div>
+        </div>
+    </div> 
+</div>
+  
+  </div>
+
+
+ 
 		<script>
+		var persentti=15;
+		
+		  $(window).scroll(function () {
+		  /*
+  if ($(window).scrollTop() > 10000) {
+    $('.scrolling').addClass('end');
+    $('.scrolling').removeClass('fixed');
+  } else {
+    $('.scrolling').addClass('fixed');
+    $('.scrolling').removeClass('end');
+  } */
+  
+    $('.scrolling').addClass('fixed');
+    $('.scrolling').removeClass('end');
+});
+		
+		
 	$(function(){
 		$("ul.checktree").checktree();
 	});
@@ -383,18 +686,126 @@ ul.checktree li:last-child { border-left: none; }
 
 
 $('#myDiv').change(function() {
+var luovuus = 0;
+var nakokulma = 0;
+var arviointi = 0;
+var uteliaisuus = 0;
+var oppimishalu = 0;
+
+var karsivallisyys = 0;
+var innokkuus = 0;
+var sinnikkyys = 0;
+var urheus = 0;
+var itsevarmuus = 0;
+
+var kiitollisuus = 0;
+var toiveikkuus = 0;
+var hengellisyys = 0;
+var taydellisyys = 0;
+var huumorintaju = 0;
+
+var rehellisyys = 0;
+var tasapuolisuus = 0;
+var ryhmatyo = 0;
+var johtajuus = 0;
+var vastuuntunto = 0;
+
+var anteeksianto = 0;
+var harkitsevuus = 0;
+var noyryys = 0;
+var itsehallinta = 0;
+var armollisuus = 0;
+
+var ystavallisyys = 0;
+var rakkaus = 0;
+var sosiaalisuus = 0;
+var myotatunto = 0;
+var uskollisuus = 0;
+
+var viisaus = 0;
+var rohkeus = 0;
+var henkisyys = 0;
+var reiluus = 0;
+var maltillisuus = 0;
+var inhimillisyys = 0;
+
   var data = [];
   {
     $('#myDiv :checked').each(function() {
       //if(values.indexOf($(this).val()) === -1){
       //values=values+parseFloat(($(this).val()));
-      data.push($(this).val());
+      data.push(parseFloat(($(this).val())));
+      //console.log($(this).val());
       // }
     });
-    console.log(data);
+    //console.log(data);
+
+for ( x = 0; x < data.length; x++ ) {
+if (data[x] > 2 && data[x] < 8) {luovuus = luovuus + 1}
+if (data[x] > 8 && data[x] < 14) {nakokulma = nakokulma + 1}
+if (data[x] > 14 && data[x] < 20) {arviointi = arviointi + 1}
+if (data[x] > 20 && data[x] < 26) {uteliaisuus = uteliaisuus + 1}
+if (data[x] > 26 && data[x] < 32) {oppimishalu = oppimishalu + 1}
+viisaus=luovuus+nakokulma+arviointi+uteliaisuus+oppimishalu;
+
+if (data[x] > 33 && data[x] < 39) {karsivallisyys = karsivallisyys +1}
+if (data[x] > 39 && data[x] < 45) {innokkuus = innokkuus +1}
+if (data[x] > 45 && data[x] < 51) {sinnikkyys = sinnikkyys +1}
+if (data[x] > 51 && data[x] < 57) {urheus = urheus +1}
+if (data[x] > 57 && data[x] < 63) {itsevarmuus = itsevarmuus +1}
+rohkeus=karsivallisyys+innokkuus+sinnikkyys+urheus+itsevarmuus;
+
+if (data[x] > 64 && data[x] < 70) {kiitollisuus = kiitollisuus +1}
+if (data[x] > 70 && data[x] < 76) {toiveikkuus = toiveikkuus +1}
+if (data[x] > 76 && data[x] < 82) {hengellisyys = hengellisyys +1}
+if (data[x] > 82 && data[x] < 88) {taydellisyys = taydellisyys +1}
+if (data[x] > 88 && data[x] < 94) {huumorintaju = huumorintaju +1}
+henkisyys=kiitollisuus+toiveikkuus+hengellisyys+taydellisyys+huumorintaju;
+
+if (data[x] > 95 && data[x] < 101) {rehellisyys = rehellisyys +1}
+if (data[x] > 101 && data[x] < 107) {tasapuolisuus = tasapuolisuus +1}
+if (data[x] > 107 && data[x] < 113) {ryhmatyo = ryhmatyo +1}
+if (data[x] > 113 && data[x] < 119) {johtajuus = johtajuus +1}
+if (data[x] > 119 && data[x] < 125) {vastuuntunto = vastuuntunto +1}
+reiluus=rehellisyys+tasapuolisuus+ryhmatyo+johtajuus+vastuuntunto;
+
+if (data[x] > 126 && data[x] < 132) {anteeksianto = anteeksianto +1}
+if (data[x] > 132 && data[x] < 138) {harkitsevuus = harkitsevuus +1}
+if (data[x] > 138 && data[x] < 144) {noyryys = noyryys +1}
+if (data[x] > 144 && data[x] < 150) {itsehallinta = itsehallinta +1}
+if (data[x] > 150 && data[x] < 156) {armollisuus = armollisuus +1}
+maltillisuus=anteeksianto+harkitsevuus+noyryys+itsehallinta+armollisuus;
+
+if (data[x] > 157 && data[x] < 163) {ystavallisyys = ystavallisyys +1}
+if (data[x] > 163 && data[x] < 169) {rakkaus = rakkaus +1}
+if (data[x] > 169 && data[x] < 175) {sosiaalisuus = sosiaalisuus +1}
+if (data[x] > 175 && data[x] < 181) {myotatunto = myotatunto +1}
+if (data[x] > 181 && data[x] < 187) {uskollisuus = uskollisuus +1}
+inhimillisyys=ystavallisyys+rakkaus+sosiaalisuus+myotatunto+uskollisuus;
+}
+console.log(viisaus,rohkeus,henkisyys,reiluus,maltillisuus,inhimillisyys);
+
+
+
+console.log(persentti);
   }
 });
+/*
+function changeElement(id,value) {
+  var el = document.getElementById(id);
+  //el.style.color = "red";
+  el.style.fontSize = "15px";
+  el.style.backgroundColor = "#FFFFFF";
+  el.style.percent = 80;
+}
+
+changeElement(t1,50);
+*/
+document.getElementById('t1').style.setProperty('--percent', persentti);
+persentti = persentti +5;
+//  {"label":"Label1","number":"150","color":"#8BC34A" },
 	</script>
+
 </div>	
 </body>
 </html>
